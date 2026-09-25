@@ -1,11 +1,13 @@
 ---
 import type { Topic } from '../data/topics';
+import { findCredit } from '../data/credits';
 
 interface Props {
   topic: Topic;
 }
 
 const { topic } = Astro.props;
+const credit = findCredit(topic.figure);
 ---
 
 <a class={`topic-card accent-${topic.accent}`} href={`/topics/${topic.slug}/`}>
@@ -14,6 +16,11 @@ const { topic } = Astro.props;
     <span class="topic-read-time">{topic.readTime}</span>
   </div>
   <img class="topic-figure" src={topic.figure} alt="" loading="lazy" decoding="async" width="640" height="360" />
+  {credit && (
+    <span class="topic-credit">
+      图片：{credit.artist}，{credit.license}
+    </span>
+  )}
   <h3>{topic.title}</h3>
   <p>{topic.summary}</p>
   <span class="topic-link">开始阅读 <span aria-hidden="true">→</span></span>

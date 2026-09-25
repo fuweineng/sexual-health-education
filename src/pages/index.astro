@@ -5,6 +5,7 @@ import TopicCard from '../components/TopicCard.astro';
 import Figure from '../components/Figure.astro';
 import { topics } from '../data/topics';
 import { articles } from '../data/articles';
+import { credits } from '../data/credits';
 
 const totalMinutes = articles.reduce((sum, article) => sum + Number.parseInt(article.readTime, 10), 0);
 ---
@@ -35,8 +36,8 @@ const totalMinutes = articles.reduce((sum, article) => sum + Number.parseInt(art
           <dd>分钟阅读量</dd>
         </div>
         <div>
-          <dt>100%</dt>
-          <dd>原创图示</dd>
+          <dt>{credits.length}</dt>
+          <dd>张图片逐项署名</dd>
         </div>
       </dl>
     </div>
@@ -64,28 +65,28 @@ const totalMinutes = articles.reduce((sum, article) => sum + Number.parseInt(art
           <p class="eyebrow">Deep dive</p>
           <h2>用图示理解，而不是死记名词</h2>
         </div>
-        <p>本站所有插图都是自行绘制的示意图，用于表达结构与流程，不代表医学诊断结果。</p>
+        <p>照片与图表均来自公有领域或开放许可素材，署名与许可条款见图注和<a href="/sources/">来源说明</a>。</p>
       </div>
       <div class="figure-grid">
         <Figure
           figure={{
-            src: '/images/cycle-map.svg',
-            alt: '展示月经周期阶段的原创曲线图',
-            caption: '月经周期：阶段示意，不代表个人预测。',
+            src: '/images/real/cycle-hormone-zh.png',
+            alt: '月经周期中雌激素水平变化的中文图表',
+            caption: '月经周期：激素随阶段变化，不用于预测个人排卵时间。',
           }}
         />
         <Figure
           figure={{
-            src: '/images/contraception-map.svg',
-            alt: '四类常见避孕方式的原创示意图',
+            src: '/images/real/contraception-pills.jpg',
+            alt: '口服避孕药铝箔板照片',
             caption: '避孕方法：按需求选择，而不是按流行度选择。',
           }}
         />
         <Figure
           figure={{
-            src: '/images/consent-loop.svg',
-            alt: '持续沟通循环图',
-            caption: '同意：持续确认，而不是一次性开关。',
+            src: '/images/real/sti-hiv-kit.jpg',
+            alt: 'HIV 抗体检测试剂盒照片',
+            caption: '检测工具：重点在于检测时机与复测安排。',
           }}
         />
       </div>
@@ -144,9 +145,9 @@ const totalMinutes = articles.reduce((sum, article) => sum + Number.parseInt(art
           <p>好奇、犹豫和提问都很正常。站点不评判读者，也不把健康问题变成道德评价。</p>
         </div>
         <div class="principle">
-          <span class="principle-number">04 / ORIGINAL</span>
-          <h3>只用原创图示</h3>
-          <p>站内插图由本站自行绘制，避免版权不清的素材，也不使用可能带有暗示性的图片。</p>
+          <span class="principle-number">04 / SOURCED</span>
+          <h3>图片标注来源</h3>
+          <p>照片与图表只选用公有领域或开放许可素材，作者、许可和原始文件页全部公开可查。</p>
         </div>
       </div>
     </div>

@@ -1,5 +1,6 @@
 ---
 import type { Figure } from '../data/articles';
+import { findCredit } from '../data/credits';
 
 type Props = {
   figure: Figure;
@@ -7,12 +8,24 @@ type Props = {
 };
 
 const { figure, index } = Astro.props;
+const credit = findCredit(figure.src);
 ---
 
 <figure class="figure">
   <img src={figure.src} alt={figure.alt} loading="lazy" decoding="async" width="960" height="540" />
   <figcaption>
-    {index !== undefined && <span class="figure-index">图 {index}</span>}
-    {figure.caption}
+    <span class="figure-line">
+      {index !== undefined && <span class="figure-index">图 {index}</span>}
+      {figure.caption}
+    </span>
+    {credit && (
+      <span class="figure-credit">
+        图片：{credit.artist}，{credit.license}
+        <a href={credit.source} target="_blank" rel="noopener noreferrer">来源</a>
+        {credit.licenseUrl && (
+          <a href={credit.licenseUrl} target="_blank" rel="noopener noreferrer">许可条款</a>
+        )}
+      </span>
+    )}
   </figcaption>
 </figure>

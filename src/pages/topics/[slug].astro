@@ -13,6 +13,12 @@ export function getStaticPaths() {
 
 const { article } = Astro.props;
 const related = articles.filter((item) => item.slug !== article.slug).slice(0, 3);
+
+let figureCounter = 0;
+const sections = article.sections.map((section) => ({
+  ...section,
+  figureIndex: section.figure ? ++figureCounter : undefined,
+}));
 ---
 
 <BaseLayout title={`${article.title}｜两性健康科普`} description={article.summary}>
@@ -26,7 +32,7 @@ const related = articles.filter((item) => item.slug !== article.slug).slice(0, 3
     <p class="eyebrow">{article.eyebrow}</p>
     <h1>{article.title}</h1>
     <p class="lede">{article.summary}</p>
-    <p class="meta">更新于 {article.updated} · 约 {article.readTime} · 本页图示为本站原创绘制</p>
+    <p class="meta">更新于 {article.updated} · 约 {article.readTime} · 图片授权见图注与<a href="/sources/">来源说明</a></p>
 
     <InfoNote title="阅读提示">
       本页内容用于一般健康教育，不能替代面对面诊疗。涉及疼痛、异常出血、检测结果或避孕选择时，请咨询具备资质的医务人员。
@@ -37,7 +43,7 @@ const related = articles.filter((item) => item.slug !== article.slug).slice(0, 3
       {article.keyPoints.map((point) => <li>{point}</li>)}
     </ul>
 
-    {article.sections.map((section, sectionIndex) => (
+    {sections.map((section) => (
       <section>
         <h2>{section.heading}</h2>
         {section.paragraphs?.map((paragraph) => <p>{paragraph}</p>)}
@@ -47,7 +53,7 @@ const related = articles.filter((item) => item.slug !== article.slug).slice(0, 3
           </ul>
         )}
         {section.callout && <InfoNote title="需要留意">{section.callout}</InfoNote>}
-        {section.figure && <Figure figure={section.figure} index={sectionIndex + 1} />}
+        {section.figure && <Figure figure={section.figure} index={section.figureIndex} />}
       </section>
     ))}
 

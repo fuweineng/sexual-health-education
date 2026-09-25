@@ -2,22 +2,10 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import InfoNote from '../components/InfoNote.astro';
 import { articles } from '../data/articles';
-
-const figureList = [
-  { file: 'consent-loop.svg', use: '同意与边界', meaning: '持续沟通循环' },
-  { file: 'contraception-map.svg', use: '避孕与选择', meaning: '四类方法对照' },
-  { file: 'sti-prevention.svg', use: '感染与检测', meaning: '疫苗、安全套与检测三层预防' },
-  { file: 'body-map.svg', use: '身体与生理基础', meaning: '感觉、激素与生殖系统相互影响' },
-  { file: 'cycle-map.svg', use: '月经与周期', meaning: '月经周期阶段示意' },
-  { file: 'puberty-map.svg', use: '青春期与成长', meaning: '成长时间线与个体差异' },
-  { file: 'emergency-contraception.svg', use: '紧急避孕', meaning: '无保护性行为后的行动时间线' },
-  { file: 'orientation-map.svg', use: '性取向与自我认同', meaning: '吸引与关系偏好的多样性' },
-  { file: 'digital-safety.svg', use: '线上互动与隐私安全', meaning: '隐私保护清单' },
-  { file: 'myth-check.svg', use: '常见误区', meaning: '信息核查流程' },
-];
+import { credits } from '../data/credits';
 ---
 
-<BaseLayout title="来源与图示说明" description="本站的参考资料、图示来源、整理方式与版权边界。">
+<BaseLayout title="来源与图示说明" description="本站的参考资料、图片来源、许可条款与署名信息。">
   <div class="container">
     <header class="page-intro">
       <p class="eyebrow">Sources and rights</p>
@@ -49,33 +37,43 @@ const figureList = [
       <div class="section-heading">
         <div>
           <p class="eyebrow">Illustrations</p>
-          <h2>图示与授权说明</h2>
+          <h2>图片来源与授权</h2>
         </div>
-        <p>站内全部插图为自行绘制的 SVG 示意图，不含第三方图片素材。</p>
+        <p>站内照片与图表来自 Wikimedia Commons，只选用公有领域、CC0 或 CC BY / CC BY-SA 许可的素材。</p>
       </div>
 
-      <InfoNote label="为什么全部自制">
-        性健康领域的图片常来自版权条款不一的来源，部分素材带有暗示性或与正文语境不符。选择自行绘制，可以确保授权链条清晰、风格统一，并避免把他人图片当作“公开可用”。
+      <InfoNote label="许可筛选原则">
+        只使用允许非商业使用、再分发并要求署名的许可；不使用带 NC / ND 限制的素材，也不复制其他站点的图片文件。每张图都会列出作者、许可条款和原始文件页，读者可自行核对。
       </InfoNote>
 
       <div class="table-wrap">
         <table class="credit-table">
-          <caption>本站原创图示清单</caption>
+          <caption>图片授权清单</caption>
           <thead>
             <tr>
               <th scope="col">文件</th>
               <th scope="col">使用页面</th>
-              <th scope="col">表达内容</th>
-              <th scope="col">授权</th>
+              <th scope="col">作者</th>
+              <th scope="col">许可</th>
+              <th scope="col">来源</th>
             </tr>
           </thead>
           <tbody>
-            {figureList.map((item) => (
+            {credits.map((credit) => (
               <tr>
-                <td><code>{item.file}</code></td>
-                <td>{item.use}</td>
-                <td>{item.meaning}</td>
-                <td>本站原创</td>
+                <td><code>{credit.file}</code></td>
+                <td>{credit.pages.join('、')}</td>
+                <td>{credit.artist}</td>
+                <td>
+                  {credit.licenseUrl ? (
+                    <a href={credit.licenseUrl} target="_blank" rel="noopener noreferrer">{credit.license}</a>
+                  ) : (
+                    credit.license
+                  )}
+                </td>
+                <td>
+                  <a href={credit.source} target="_blank" rel="noopener noreferrer">Wikimedia Commons</a>
+                </td>
               </tr>
             ))}
           </tbody>
@@ -83,7 +81,7 @@ const figureList = [
       </div>
 
       <p class="note">
-        如果未来需要引用第三方材料，会在此页逐项记录来源、授权范围和署名要求，并只在许可允许的范围内使用。公开可访问不等于可自由再利用，任何素材在使用前都需要单独确认许可条款。
+        图片按原样使用并按容器缩放显示，未改动画面上的文字与构图。CC BY-SA 材料随附其许可条款链接，复制或改编这些素材时需遵循相同许可要求。许可状态可能随原作者调整，发现问题请以原始文件页的最新说明为准。
       </p>
     </div>
   </section>
@@ -95,7 +93,7 @@ const figureList = [
           <p class="eyebrow">Byline</p>
           <h2>文章署名与更新时间</h2>
         </div>
-        <p>内容由本站独立编写，引用来源仅用于核对事实，不构成合作或背书关系。</p>
+        <p>文字内容由本站独立编写，引用来源仅用于核对事实，不构成合作或背书关系。</p>
       </div>
       <ul class="policy-list">
         {articles.map((article) => (
@@ -108,7 +106,7 @@ const figureList = [
   <section class="section">
     <div class="container">
       <InfoNote label="版权边界">
-        <p>本站不转载文章、图片、Logo 或其他站点的页面代码，也不复制任何站点的排版结构。发现来源标注错误或需要更正，请通过本站公开联系方式说明具体情况。</p>
+        <p>本站文章、页面结构与代码均为独立编写，不转载其他站点的文字，也不复制其排版。图片按上表逐项标注作者与许可，发现署名错误或许可状态变化，请通过本站公开联系方式说明具体情况。</p>
       </InfoNote>
     </div>
   </section>
