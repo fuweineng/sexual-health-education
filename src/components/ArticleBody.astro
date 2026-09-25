@@ -1,0 +1,59 @@
+---
+import type { Article } from '../data/articles';
+import Figure from './Figure.astro';
+import InfoNote from './InfoNote.astro';
+
+type Props = {
+  article: Article;
+};
+
+const { article } = Astro.props;
+
+let figureCounter = 0;
+const sections = article.sections.map((section) => ({
+  ...section,
+  figureIndex: section.figure ? ++figureCounter : undefined,
+}));
+---
+
+<nav class="crumbs" aria-label="面包屑">
+  <a href="/">首页</a>
+  <span aria-hidden="true">/</span>
+  <span>{article.eyebrow}</span>
+</nav>
+
+<p class="eyebrow">{article.eyebrow}</p>
+<h1>{article.title}</h1>
+<p class="lede">{article.summary}</p>
+<p class="meta">更新于 {article.updated} · 约 {article.readTime} · 图片授权见图注与<a href="/general/copyright/">版权许可</a></p>
+
+<InfoNote title="阅读提示">
+  本页内容用于一般健康教育，不能替代面对面诊疗。涉及疼痛、异常出血、检测结果或避孕选择时，请咨询具备资质的医务人员。
+</InfoNote>
+
+<h2>先记住这三点</h2>
+<ul class="checklist">
+  {article.keyPoints.map((point) => <li>{point}</li>)}
+</ul>
+
+{sections.map((section) => (
+  <section>
+    <h2>{section.heading}</h2>
+    {section.paragraphs?.map((paragraph) => <p set:html={paragraph} />)}
+    {section.bullets && (
+      <ul>
+        {section.bullets.map((bullet) => <li set:html={bullet} />)}
+      </ul>
+    )}
+    {section.callout && <InfoNote title="需要留意"><span set:html={section.callout} /></InfoNote>}
+    {section.figure && <Figure figure={section.figure} index={section.figureIndex} />}
+  </section>
+))}
+
+<section>
+  <h2>资料来源</h2>
+  <ul class="sources">
+    {article.sources.map((source) => <li>{source}</li>)}
+  </ul>
+  <p class="note">本站不提供个体化诊断或治疗建议，来源列表用于说明编写依据，引用内容均经过重新表述。</p>
+</section>

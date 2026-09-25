@@ -1,0 +1,32 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import InfoNote from '../../components/InfoNote.astro';
+---
+
+<BaseLayout title="隐私政策" description="本站如何处理访问日志、统计与来信信息。">
+  <div class="container">
+    <header class="page-intro">
+      <p class="eyebrow">Privacy policy</p>
+      <h1>我们收集什么，不收集什么。</h1>
+      <p>本站是静态页面，不注册、不登录、不建立用户画像。这份说明用于让读者知道访问时会留下哪些信息。</p>
+    </header>
+  </div>
+
+  <section class="section section-soft">
+    <div class="container">
+      <ul class="policy-list">
+        <li><strong>不使用账号系统</strong>没有注册、登录或个人资料，本站不存储任何可直接识别个人身份的信息。</li>
+        <li><strong>不使用广告与营销追踪</strong>不投放广告，不嵌入第三方广告脚本，不设置营销类 Cookie。</li>
+        <li><strong>基础访问日志</strong>托管平台（GitHub Pages）与内容分发网络会按其自身政策记录常规服务器日志，例如 IP 地址、时间、请求的页面与用户代理，用于安全与故障排查。</li>
+        <li><strong>无本地存储偏好</strong>除浏览器自身的缓存机制外，本站不在你的设备上写入任何标识或偏好数据。</li>
+        <li><strong>来信信息</strong>通过<a href="/general/communicate/">来信沟通</a>提交的内容，仅用于回复与内容更正，不用于建立名单、不对外提供、不做商业用途；问题解决后可要求删除。</li>
+      </ul>
+
+      <InfoNote label="第三方链接">
+        文中出现的外部链接指向各自独立的网站，其数据处理方式由对方的隐私政策决定，本站无法控制。
+      </InfoNote>
+
+      <p class="note">如果托管方式或统计工具有变化，本页会同步更新并调整“更新日期”。有疑问请通过来信沟通页面联系。</p>
+    </div>
+  </section>
+</BaseLayout>

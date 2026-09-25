@@ -15,7 +15,7 @@ export const credits: Credit[] = [
     artist: 'USAID in Africa',
     license: '公有领域（Public domain）',
     source: 'https://commons.wikimedia.org/wiki/File:Communication_to_promote_equity,_Burundi_(25166138278).jpg',
-    pages: ['同意与边界'],
+    pages: ['性行为与同意'],
   },
   {
     file: 'contraception-pills.jpg',
@@ -40,7 +40,7 @@ export const credits: Credit[] = [
     artist: '美国疾病控制与预防中心（CDC）',
     license: '公有领域（Public domain）',
     source: 'https://commons.wikimedia.org/wiki/File:Rapid_point-of-care_syphilis_test-CDC.jpg',
-    pages: ['性传播感染与检测'],
+    pages: ['性传播疾病'],
   },
   {
     file: 'sti-hiv-kit.jpg',
@@ -49,7 +49,7 @@ export const credits: Credit[] = [
     license: 'CC BY 2.0',
     licenseUrl: 'https://creativecommons.org/licenses/by/2.0',
     source: 'https://commons.wikimedia.org/wiki/File:HIV_Antibody_Testing_Kit_(48140260338).jpg',
-    pages: ['性传播感染与检测'],
+    pages: ['性传播疾病'],
   },
   {
     file: 'body-repro-system.png',
@@ -58,7 +58,7 @@ export const credits: Credit[] = [
     license: 'CC BY 3.0',
     licenseUrl: 'https://creativecommons.org/licenses/by/3.0',
     source: 'https://commons.wikimedia.org/wiki/File:Blausen_0399_FemaleReproSystem_01.png',
-    pages: ['身体与生理基础'],
+    pages: ['人类生殖系统'],
   },
   {
     file: 'cycle-hormone-zh.png',
@@ -67,7 +67,7 @@ export const credits: Credit[] = [
     license: 'CC0',
     licenseUrl: 'http://creativecommons.org/publicdomain/zero/1.0/',
     source: 'https://commons.wikimedia.org/wiki/File:Estradiol_during_menstrual_cycle_zh-CN.png',
-    pages: ['月经与周期'],
+    pages: ['月经周期'],
   },
   {
     file: 'menstrual-products.jpg',
@@ -76,7 +76,7 @@ export const credits: Credit[] = [
     license: 'CC BY-SA 4.0',
     licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0',
     source: 'https://commons.wikimedia.org/wiki/File:Set-feminine-hygiene-products-menstruation-days-sanitary-pads-tampons-menstrual-cup-pants_168129-1797.jpg',
-    pages: ['月经与周期'],
+    pages: ['月经周期'],
   },
   {
     file: 'puberty-students.jpg',
@@ -120,7 +120,34 @@ export const credits: Credit[] = [
     artist: 'Senior Airman Justin Armstrong（美国空军）',
     license: '公有领域（Public domain）',
     source: 'https://commons.wikimedia.org/wiki/File:MAFB_library,_knowledge_is_power_170321-F-CG053-0072.jpg',
-    pages: ['常见误区'],
+    pages: ['二十个常见误区'],
+  },
+  {
+    file: 'info-books.jpg',
+    title: 'assorted book lot',
+    artist: 'freestocks',
+    license: 'Unsplash License',
+    licenseUrl: 'https://unsplash.com/license',
+    source: 'https://unsplash.com/photos/assorted-book-lot-YTUZcmmf1eU',
+    pages: ['性与信息'],
+  },
+  {
+    file: 'physiology-cover.jpg',
+    title: '（手与花的柔焦照片）',
+    artist: 'Olga Drach',
+    license: 'Unsplash License',
+    licenseUrl: 'https://unsplash.com/license',
+    source: 'https://unsplash.com/photos/JSXRzpWmZiA',
+    pages: ['性生理'],
+  },
+  {
+    file: 'resources-paper.jpg',
+    title: '（白色纸页纹理照片）',
+    artist: 'jjying',
+    license: 'Unsplash License',
+    licenseUrl: 'https://unsplash.com/license',
+    source: 'https://unsplash.com/photos/WmnsGyaFnCQ',
+    pages: ['其他媒体', '文章'],
   },
 ];
 

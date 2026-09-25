@@ -1,0 +1,32 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ArticleBody from '../../components/ArticleBody.astro';
+import { articles } from '../../data/articles';
+
+export function getStaticPaths() {
+  return articles
+    .filter((article) => article.group === 'main')
+    .map((article) => ({ params: { slug: article.slug }, props: { article } }));
+}
+
+const { article } = Astro.props;
+const related = articles.filter((item) => item.group === 'main' && item.slug !== article.slug).slice(0, 4);
+---
+
+<BaseLayout title={`${article.title}｜两性健康科普`} description={article.summary}>
+  <article class="prose">
+    <ArticleBody article={article} />
+
+    <nav class="related" aria-label="继续阅读">
+      <h2>继续阅读</h2>
+      <ul>
+        {related.map((item) => (
+          <li>
+            <a href={`/main/${item.slug}/`}>{item.title}</a>
+            <span>{item.readTime}</span>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  </article>
+</BaseLayout>

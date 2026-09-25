@@ -7,15 +7,17 @@ interface Props {
 }
 
 const { topic } = Astro.props;
-const credit = findCredit(topic.figure);
+const credit = topic.figure ? findCredit(topic.figure) : undefined;
 ---
 
-<a class={`topic-card accent-${topic.accent}`} href={`/topics/${topic.slug}/`}>
+<a class={`topic-card accent-${topic.accent}`} href={topic.href}>
   <div class="topic-card-top">
     <span class="topic-dot" aria-hidden="true"></span>
     <span class="topic-read-time">{topic.readTime}</span>
   </div>
-  <img class="topic-figure" src={topic.figure} alt="" loading="lazy" decoding="async" width="640" height="360" />
+  {topic.figure && (
+    <img class="topic-figure" src={topic.figure} alt="" loading="lazy" decoding="async" width="640" height="360" />
+  )}
   {credit && (
     <span class="topic-credit">
       图片：{credit.artist}，{credit.license}

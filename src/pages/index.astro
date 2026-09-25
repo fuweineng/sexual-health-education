@@ -20,7 +20,7 @@ const totalMinutes = articles.reduce((sum, article) => sum + Number.parseInt(art
       </p>
       <div class="hero-actions">
         <a class="button button-primary" href="#topics">从基础话题开始</a>
-        <a class="button button-secondary" href="/myths/">先看常见误区</a>
+        <a class="button button-secondary" href="/article/common-myths/">先看常见误区</a>
       </div>
       <dl class="hero-stats">
         <div>
@@ -50,7 +50,7 @@ const totalMinutes = articles.reduce((sum, article) => sum + Number.parseInt(art
           <p class="eyebrow">Start here</p>
           <h2>先从最常见的问题开始</h2>
         </div>
-        <p>每篇文章都尽量使用清楚的语言，配置原创示意图，并在文末列出参考来源。健康情况因人而异，必要时请咨询专业人员。</p>
+        <p>每篇文章都尽量使用清楚的语言，配开放许可的图片并逐项署名，在文末列出参考来源。健康情况因人而异，必要时请咨询专业人员。</p>
       </div>
       <div class="topics-grid">
         {topics.map((topic) => <TopicCard topic={topic} />)}
@@ -63,9 +63,9 @@ const totalMinutes = articles.reduce((sum, article) => sum + Number.parseInt(art
       <div class="section-heading">
         <div>
           <p class="eyebrow">Deep dive</p>
-          <h2>用图示理解，而不是死记名词</h2>
+          <h2>用图片理解，而不是死记名词</h2>
         </div>
-        <p>照片与图表均来自公有领域或开放许可素材，署名与许可条款见图注和<a href="/sources/">来源说明</a>。</p>
+        <p>照片与图表均来自公有领域或开放许可素材，署名与许可条款见图注和<a href="/general/copyright/">版权许可</a>。</p>
       </div>
       <div class="figure-grid">
         <Figure
@@ -100,20 +100,20 @@ const totalMinutes = articles.reduce((sum, article) => sum + Number.parseInt(art
           <p class="eyebrow">Reference</p>
           <h2>两个查问题的入口</h2>
         </div>
-        <p>遇到具体说法或名词时，可以先查<a href="/myths/">常见误区</a>和<a href="/glossary/">术语表</a>。</p>
+        <p>遇到具体说法或名词时，可以先查<a href="/article/common-myths/">常见误区</a>和<a href="/dict/">术语表</a>。</p>
       </div>
       <div class="reference-grid">
-        <a class="reference-card" href="/myths/">
+        <a class="reference-card" href="/article/common-myths/">
           <h3>二十个常见误区</h3>
           <p>从“第一次不会怀孕”到紧急避孕的误解，附带更准确的理解。</p>
         </a>
-        <a class="reference-card" href="/glossary/">
+        <a class="reference-card" href="/dict/">
           <h3>性健康术语表</h3>
           <p>用中性、简洁的语言解释同意、边界、窗口期等常见术语。</p>
         </a>
-        <a class="reference-card" href="/sources/">
-          <h3>来源与授权说明</h3>
-          <p>编写依据、图示来源、更新时间和反馈方式。</p>
+        <a class="reference-card" href="/general/copyright/">
+          <h3>版权许可与图片来源</h3>
+          <p>文字许可条件、图片授权清单、署名与更新时间。</p>
         </a>
       </div>
     </div>

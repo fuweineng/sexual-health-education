@@ -1,0 +1,40 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ArticleBody from '../../components/ArticleBody.astro';
+import { articles } from '../../data/articles';
+
+export function getStaticPaths() {
+  return articles
+    .filter((article) => article.group === 'article')
+    .map((article) => ({ params: { slug: article.slug }, props: { article } }));
+}
+
+const { article } = Astro.props;
+const related = articles.filter((item) => item.group === 'article' && item.slug !== article.slug);
+---
+
+<BaseLayout title={`${article.title}｜两性健康科普`} description={article.summary}>
+  <article class="prose">
+    <ArticleBody article={article} />
+
+    <nav class="related" aria-label="更多文章">
+      <h2>更多文章</h2>
+      <ul>
+        <li>
+          <a href="/article/common-myths/">二十个常见误区</a>
+          <span>清单</span>
+        </li>
+        {related.map((item) => (
+          <li>
+            <a href={`/article/${item.slug}/`}>{item.title}</a>
+            <span>{item.readTime}</span>
+          </li>
+        ))}
+        <li>
+          <a href="/article/">返回文章列表</a>
+          <span>全部</span>
+        </li>
+      </ul>
+    </nav>
+  </article>
+</BaseLayout>

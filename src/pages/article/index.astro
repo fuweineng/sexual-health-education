@@ -1,0 +1,57 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Figure from '../../components/Figure.astro';
+import InfoNote from '../../components/InfoNote.astro';
+import { articles } from '../../data/articles';
+
+const entries = [
+  ...articles
+    .filter((article) => article.group === 'article')
+    .map((article) => ({
+      href: `/article/${article.slug}/`,
+      title: article.title,
+      summary: article.summary,
+      readTime: article.readTime,
+      eyebrow: article.eyebrow,
+    })),
+  {
+    href: '/article/common-myths/',
+    title: '二十个常见误区',
+    summary: '性健康领域最常被传播的错误说法，以及更准确的理解。',
+    readTime: '清单',
+    eyebrow: '误区清单',
+  },
+];
+---
+
+<BaseLayout title="文章｜两性健康科普" description="针对具体问题的短篇科普文章与常见误区清单。">
+  <article class="prose">
+    <p class="eyebrow">Articles</p>
+    <h1>文章</h1>
+    <p class="lede">针对具体问题的短篇内容：紧急避孕、线上隐私，以及常见的错误说法。</p>
+
+    <InfoNote title="与正文的区别">
+      正文（<a href="/main/human-reproductive-system/">人体生殖系统</a>、<a href="/main/contraception/">避孕</a> 等）是系统性的入门内容；这里收录的是单点问题的说明，可以单独阅读。
+    </InfoNote>
+
+    <Figure
+      index={1}
+      figure={{
+        src: '/images/real/resources-paper.jpg',
+        alt: '层叠白色纸页的纹理照片',
+        caption: '文章按单点问题编写，方便按需检索；系统性内容请走正文入口。',
+      }}
+    />
+
+    <ul class="entry-list">
+      {entries.map((entry) => (
+        <li>
+          <p class="entry-eyebrow">{entry.eyebrow}</p>
+          <h2><a href={entry.href}>{entry.title}</a></h2>
+          <p>{entry.summary}</p>
+          <span class="entry-meta">{entry.readTime}</span>
+        </li>
+      ))}
+    </ul>
+  </article>
+</BaseLayout>

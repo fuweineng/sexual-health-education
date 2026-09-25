@@ -1,0 +1,33 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import InfoNote from '../../components/InfoNote.astro';
+---
+
+<BaseLayout title="使用条款" description="使用本站内容前需要了解的责任边界与使用规则。">
+  <div class="container">
+    <header class="page-intro">
+      <p class="eyebrow">Terms of use</p>
+      <h1>使用本站前，请先读这一页。</h1>
+      <p>继续浏览即表示你理解并接受以下条款。若不接受，请停止使用本站内容。</p>
+    </header>
+  </div>
+
+  <section class="section section-soft">
+    <div class="container">
+      <ul class="policy-list">
+        <li><strong>教育用途</strong>本站提供一般性健康教育信息，不构成医疗建议、诊断或治疗方案，也不能替代医生面对面的判断。</li>
+        <li><strong>紧急情况</strong>遇到持续疼痛、大量出血、意识改变等紧急情况，请直接联系当地急救服务；本站不提供即时咨询。</li>
+        <li><strong>内容时效</strong>医学共识会更新，文章标注的更新时间仅供参考；以最新发布的权威指南与药品说明书为准。</li>
+        <li><strong>转载与改编</strong>允许非商业转载与改编，需署名并保留原文链接；具体条件见<a href="/general/copyright/">版权许可</a>。</li>
+        <li><strong>外部链接</strong>本站不为第三方网站的内容、可用性与安全性承担责任。</li>
+        <li><strong>责任限制</strong>因使用或无法使用本站内容而产生的直接或间接损失，本站在法律允许的范围内不承担责任。</li>
+      </ul>
+
+      <InfoNote label="广告与捐赠">
+        本站为非商业项目，不投放广告、不接受捐赠、不设付费墙，也不开展任何形式的商业合作。
+      </InfoNote>
+
+      <p class="note">条款如作调整，会在本页更新并显示最新修改时间。修改后继续使用即视为接受新条款。</p>
+    </div>
+  </section>
+</BaseLayout>

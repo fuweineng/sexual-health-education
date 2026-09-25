@@ -1,16 +1,16 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-import InfoNote from '../components/InfoNote.astro';
-import { articles } from '../data/articles';
-import { credits } from '../data/credits';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import InfoNote from '../../components/InfoNote.astro';
+import { articles } from '../../data/articles';
+import { credits } from '../../data/credits';
 ---
 
-<BaseLayout title="来源与图示说明" description="本站的参考资料、图片来源、许可条款与署名信息。">
+<BaseLayout title="版权许可与图片来源" description="本站的文字许可、图片授权清单、署名信息与转载规则。">
   <div class="container">
     <header class="page-intro">
-      <p class="eyebrow">Sources and rights</p>
-      <h1>每一条结论，都应该能回到来源。</h1>
-      <p>本站尽量使用权威、公开、适合普通读者理解的资料。参考资料名称会随文章一起列出，读者可以据此查找更完整的信息。</p>
+      <p class="eyebrow">Copyright and licences</p>
+      <h1>文字与图片分别按什么许可使用。</h1>
+      <p>本站内容为独立编写的非商业科普材料。每一张图片的作者、许可与原始文件页都逐项列在下方表格中，可以自行核对。</p>
     </header>
   </div>
 
@@ -18,17 +18,18 @@ import { credits } from '../data/credits';
     <div class="container">
       <div class="section-heading">
         <div>
-          <p class="eyebrow">Reference groups</p>
-          <h2>主要参考方向</h2>
+          <p class="eyebrow">Text</p>
+          <h2>文字内容的使用条件</h2>
         </div>
-        <p>资料用于核对事实与方向，不代表任何机构对本站的背书。</p>
+        <p>面向教育与个人阅读，允许在满足署名条件的前提下转载和改编。</p>
       </div>
       <ul class="policy-list">
-        <li><strong>世界卫生组织（WHO）</strong>用于性健康、避孕、性别暴力与青少年健康等主题的公开资料。</li>
-        <li><strong>联合国相关机构</strong>用于权利、同意、性教育与生殖健康背景资料的交叉核对。</li>
-        <li><strong>各国公共卫生与医疗体系</strong>包括疾病预防控制机构和国民保健服务体系发布的公众教育材料。</li>
-        <li><strong>专业医学组织</strong>用于妇产科、儿科、心理健康等主题的术语解释与就医提示。</li>
+        <li><strong>允许</strong>非商业用途的转载、翻译和课堂使用；需保留作者署名（“性健康科普”）、原文链接，并注明内容经过改动。</li>
+        <li><strong>需要先取得同意</strong>商业使用、整站复制、用于产品内容或训练语料的批量提取。</li>
+        <li><strong>不允许</strong>删改来源标注后冒充原创，或用于恐吓、羞辱、误导性的内容传播。</li>
+        <li><strong>医疗免责</strong>内容仅供一般健康教育，不构成诊断、处方或治疗建议；据此行事产生的后果由使用者自行承担。</li>
       </ul>
+      <p class="note">本站文字、页面结构与代码均为独立编写，不转载其他站点的文章，也不复制其排版与品牌素材。</p>
     </div>
   </section>
 
@@ -36,14 +37,14 @@ import { credits } from '../data/credits';
     <div class="container">
       <div class="section-heading">
         <div>
-          <p class="eyebrow">Illustrations</p>
+          <p class="eyebrow">Images</p>
           <h2>图片来源与授权</h2>
         </div>
-        <p>站内照片与图表来自 Wikimedia Commons，只选用公有领域、CC0 或 CC BY / CC BY-SA 许可的素材。</p>
+        <p>照片与图表来自 Wikimedia Commons 与 Unsplash，只选用公有领域、CC0、CC BY / CC BY-SA 或 Unsplash 许可的素材。</p>
       </div>
 
       <InfoNote label="许可筛选原则">
-        只使用允许非商业使用、再分发并要求署名的许可；不使用带 NC / ND 限制的素材，也不复制其他站点的图片文件。每张图都会列出作者、许可条款和原始文件页，读者可自行核对。
+        只使用允许非商业使用、再分发并要求署名的许可；不使用带 NC / ND 限制的素材，也不复制其他站点的图片文件。每张图都会列出作者、许可条款和原始来源，读者可自行核对。
       </InfoNote>
 
       <div class="table-wrap">
@@ -72,7 +73,7 @@ import { credits } from '../data/credits';
                   )}
                 </td>
                 <td>
-                  <a href={credit.source} target="_blank" rel="noopener noreferrer">Wikimedia Commons</a>
+                  <a href={credit.source} target="_blank" rel="noopener noreferrer">原始来源</a>
                 </td>
               </tr>
             ))}
@@ -106,7 +107,7 @@ import { credits } from '../data/credits';
   <section class="section">
     <div class="container">
       <InfoNote label="版权边界">
-        <p>本站文章、页面结构与代码均为独立编写，不转载其他站点的文字，也不复制其排版。图片按上表逐项标注作者与许可，发现署名错误或许可状态变化，请通过本站公开联系方式说明具体情况。</p>
+        <p>本站文章、页面结构与代码均为独立编写，不转载其他站点的文字，也不复制其排版。图片按上表逐项标注作者与许可，发现署名错误或许可状态变化，请通过<a href="/general/communicate/">来信沟通</a>页面说明具体情况。</p>
       </InfoNote>
     </div>
   </section>

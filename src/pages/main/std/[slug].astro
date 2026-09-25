@@ -1,0 +1,36 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import ArticleBody from '../../../components/ArticleBody.astro';
+import { articles } from '../../../data/articles';
+
+export function getStaticPaths() {
+  return articles
+    .filter((article) => article.group === 'std')
+    .map((article) => ({ params: { slug: article.slug }, props: { article } }));
+}
+
+const { article } = Astro.props;
+const siblings = articles.filter((item) => item.group === 'std');
+---
+
+<BaseLayout title={`${article.title}｜两性健康科普`} description={article.summary}>
+  <article class="prose">
+    <ArticleBody article={article} />
+
+    <nav class="related" aria-label="其他性传播疾病">
+      <h2>其他性传播疾病</h2>
+      <ul>
+        <li>
+          <a href="/main/std/">性传播疾病总览</a>
+          <span>概述</span>
+        </li>
+        {siblings.filter((item) => item.slug !== article.slug).map((item) => (
+          <li>
+            <a href={`/main/std/${item.slug}/`}>{item.title}</a>
+            <span>{item.readTime}</span>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  </article>
+</BaseLayout>
