@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="性健康科普">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ef8a72" />
+      <stop offset="1" stop-color="#c95448" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="18" fill="url(#g)" />
+  <path d="M32 15l3.8 12.2L48 31l-12.2 3.8L32 47l-3.8-12.2L16 31l12.2-3.8L32 15z" fill="#fff" />
+</svg>

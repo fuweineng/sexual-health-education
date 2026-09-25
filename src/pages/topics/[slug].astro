@@ -1,0 +1,51 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import InfoNote from '../../components/InfoNote.astro';
+import { articles, type Article } from '../../data/articles';
+
+export function getStaticPaths() {
+  return articles.map((article) => ({
+    params: { slug: article.slug },
+    props: { article },
+  }));
+}
+
+interface Props {
+  article: Article;
+}
+
+const { article } = Astro.props;
+---
+<BaseLayout title={article.title} description={article.summary}>
+  <div class="container article-shell">
+    <nav class="breadcrumb" aria-label="面包屑导航">
+      <a href="/">首页</a>
+      <span aria-hidden="true">/</span>
+      <span>{article.title}</span>
+    </nav>
+    <header class="article-header">
+      <p class="article-eyebrow">{article.eyebrow}</p>
+      <h1>{article.title}</h1>
+      <p class="article-summary">{article.summary}</p>
+      <p class="article-meta">最后整理：{article.updated} · 阅读时间约 6–9 分钟</p>
+    </header>
+    <article class="article-content">
+      {article.sections.map((section) => (
+        <section>
+          <h2>{section.heading}</h2>
+          {section.paragraphs?.map((paragraph) => <p>{paragraph}</p>)}
+          {section.bullets && (
+            <ul>
+              {section.bullets.map((bullet) => <li>{bullet}</li>)}
+            </ul>
+          )}
+          {section.callout && <InfoNote><p>{section.callout}</p></InfoNote>}
+        </section>
+      ))}
+      <div class="sources-box">
+        <strong>参考资料</strong>
+        <p>{article.sources.join('；')}。本站为独立整理，发布或更新时请再次核对原始资料的版本与适用范围。</p>
+      </div>
+    </article>
+  </div>
+</BaseLayout>

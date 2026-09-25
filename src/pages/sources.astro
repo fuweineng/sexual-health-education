@@ -1,0 +1,37 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import InfoNote from '../components/InfoNote.astro';
+---
+<BaseLayout title="来源与版权" description="本站的参考资料、整理方式与版权边界。">
+  <div class="container">
+    <header class="page-intro">
+      <p class="eyebrow">Sources and rights</p>
+      <h1>每一条结论，都应该能回到来源。</h1>
+      <p>本站尽量使用权威、公开、适合普通读者理解的资料。参考资料名称会随文章一起列出，读者可以据此查找更完整的信息。</p>
+    </header>
+  </div>
+  <section class="section section-soft">
+    <div class="container">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Reference groups</p>
+          <h2>主要参考方向</h2>
+        </div>
+        <p>资料用于核对事实与方向，不代表任何机构对本站的背书。</p>
+      </div>
+      <ul class="policy-list">
+        <li><strong>世界卫生组织（WHO）</strong>用于性健康、避孕、性别暴力与青少年健康等主题的公开资料。</li>
+        <li><strong>联合国相关机构</strong>用于权利、同意、性教育与生殖健康背景资料的交叉核对。</li>
+        <li><strong>各国公共卫生与医疗体系</strong>包括疾病预防控制机构和国民保健服务体系发布的公众教育材料。</li>
+        <li><strong>专业医学组织</strong>用于妇产科、儿科、心理健康等主题的术语解释与就医提示。</li>
+      </ul>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <InfoNote label="版权边界">
+        <p>本站不转载文章、图片、Logo 或其他站点的页面代码。若未来需要引用特定材料，会单独记录来源、授权范围和署名方式，并在页面中明确标注。</p>
+      </InfoNote>
+    </div>
+  </section>
+</BaseLayout>
