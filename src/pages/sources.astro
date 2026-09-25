@@ -1,8 +1,23 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import InfoNote from '../components/InfoNote.astro';
+import { articles } from '../data/articles';
+
+const figureList = [
+  { file: 'consent-loop.svg', use: '同意与边界', meaning: '持续沟通循环' },
+  { file: 'contraception-map.svg', use: '避孕与选择', meaning: '四类方法对照' },
+  { file: 'sti-prevention.svg', use: '感染与检测', meaning: '疫苗、安全套与检测三层预防' },
+  { file: 'body-map.svg', use: '身体与生理基础', meaning: '感觉、激素与生殖系统相互影响' },
+  { file: 'cycle-map.svg', use: '月经与周期', meaning: '月经周期阶段示意' },
+  { file: 'puberty-map.svg', use: '青春期与成长', meaning: '成长时间线与个体差异' },
+  { file: 'emergency-contraception.svg', use: '紧急避孕', meaning: '无保护性行为后的行动时间线' },
+  { file: 'orientation-map.svg', use: '性取向与自我认同', meaning: '吸引与关系偏好的多样性' },
+  { file: 'digital-safety.svg', use: '线上互动与隐私安全', meaning: '隐私保护清单' },
+  { file: 'myth-check.svg', use: '常见误区', meaning: '信息核查流程' },
+];
 ---
-<BaseLayout title="来源与版权" description="本站的参考资料、整理方式与版权边界。">
+
+<BaseLayout title="来源与图示说明" description="本站的参考资料、图示来源、整理方式与版权边界。">
   <div class="container">
     <header class="page-intro">
       <p class="eyebrow">Sources and rights</p>
@@ -10,6 +25,7 @@ import InfoNote from '../components/InfoNote.astro';
       <p>本站尽量使用权威、公开、适合普通读者理解的资料。参考资料名称会随文章一起列出，读者可以据此查找更完整的信息。</p>
     </header>
   </div>
+
   <section class="section section-soft">
     <div class="container">
       <div class="section-heading">
@@ -27,10 +43,72 @@ import InfoNote from '../components/InfoNote.astro';
       </ul>
     </div>
   </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Illustrations</p>
+          <h2>图示与授权说明</h2>
+        </div>
+        <p>站内全部插图为自行绘制的 SVG 示意图，不含第三方图片素材。</p>
+      </div>
+
+      <InfoNote label="为什么全部自制">
+        性健康领域的图片常来自版权条款不一的来源，部分素材带有暗示性或与正文语境不符。选择自行绘制，可以确保授权链条清晰、风格统一，并避免把他人图片当作“公开可用”。
+      </InfoNote>
+
+      <div class="table-wrap">
+        <table class="credit-table">
+          <caption>本站原创图示清单</caption>
+          <thead>
+            <tr>
+              <th scope="col">文件</th>
+              <th scope="col">使用页面</th>
+              <th scope="col">表达内容</th>
+              <th scope="col">授权</th>
+            </tr>
+          </thead>
+          <tbody>
+            {figureList.map((item) => (
+              <tr>
+                <td><code>{item.file}</code></td>
+                <td>{item.use}</td>
+                <td>{item.meaning}</td>
+                <td>本站原创</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <p class="note">
+        如果未来需要引用第三方材料，会在此页逐项记录来源、授权范围和署名要求，并只在许可允许的范围内使用。公开可访问不等于可自由再利用，任何素材在使用前都需要单独确认许可条款。
+      </p>
+    </div>
+  </section>
+
+  <section class="section section-soft">
+    <div class="container">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Byline</p>
+          <h2>文章署名与更新时间</h2>
+        </div>
+        <p>内容由本站独立编写，引用来源仅用于核对事实，不构成合作或背书关系。</p>
+      </div>
+      <ul class="policy-list">
+        {articles.map((article) => (
+          <li><strong>{article.title}</strong>更新于 {article.updated}，约 {article.readTime}。</li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
   <section class="section">
     <div class="container">
       <InfoNote label="版权边界">
-        <p>本站不转载文章、图片、Logo 或其他站点的页面代码。若未来需要引用特定材料，会单独记录来源、授权范围和署名方式，并在页面中明确标注。</p>
+        <p>本站不转载文章、图片、Logo 或其他站点的页面代码，也不复制任何站点的排版结构。发现来源标注错误或需要更正，请通过本站公开联系方式说明具体情况。</p>
       </InfoNote>
     </div>
   </section>

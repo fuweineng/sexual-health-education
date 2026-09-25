@@ -1,0 +1,46 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import InfoNote from '../components/InfoNote.astro';
+import Figure from '../components/Figure.astro';
+import { myths } from '../data/myths';
+---
+
+<BaseLayout title="常见误区｜两性健康科普" description="两性健康领域最常见的二十个误区，以及为什么它们不成立。">
+  <article class="prose">
+    <p class="eyebrow">误区清单</p>
+    <h1>二十个常见误区</h1>
+    <p class="lede">很多伤害来自被反复传播的假信息。这里列出最常见的说法，以及更准确的理解。</p>
+
+    <InfoNote title="如何使用这份清单">
+      这些条目用于帮助识别不可靠的说法，不用于自我诊断。遇到健康问题时，请咨询具备资质的医务人员。
+    </InfoNote>
+
+    <Figure
+      index={1}
+      figure={{
+        src: '/images/myth-check.svg',
+        alt: '用问号和核查清单表示信息核查流程的原创示意图',
+        caption: '遇到让人惊讶的性健康说法时，先问来源，再问证据。',
+      }}
+    />
+
+    <ol class="myth-list">
+      {myths.map((item) => (
+        <li>
+          <p class="myth">{item.myth}</p>
+          <p class="reality">{item.reality}</p>
+        </li>
+      ))}
+    </ol>
+
+    <section>
+      <h2>为什么不准确的说法传播得很快</h2>
+      <p>
+        性健康长期缺乏正面教育，尴尬和羞耻让很多人不愿意公开提问，错误信息因此更容易反复流传。看到让人意外或焦虑的说法时，可以先查来源机构和时间，再看是否说明了适用人群和不确定性。
+      </p>
+      <p>
+        本站所有内容都尽量标注资料来源，并明确本站图示为原创绘制。发现问题，欢迎通过<a href="/sources/">来源与说明</a>页面列出的方式反馈。
+      </p>
+    </section>
+  </article>
+</BaseLayout>

@@ -7,11 +7,13 @@ interface Props {
 
 const { topic } = Astro.props;
 ---
+
 <a class={`topic-card accent-${topic.accent}`} href={`/topics/${topic.slug}/`}>
   <div class="topic-card-top">
     <span class="topic-dot" aria-hidden="true"></span>
     <span class="topic-read-time">{topic.readTime}</span>
   </div>
+  <img class="topic-figure" src={topic.figure} alt="" loading="lazy" decoding="async" width="640" height="360" />
   <h3>{topic.title}</h3>
   <p>{topic.summary}</p>
   <span class="topic-link">开始阅读 <span aria-hidden="true">→</span></span>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" role="img" aria-labelledby="title desc">
+  <title id="title">线上隐私与安全清单</title>
+  <desc id="desc">手机、锁和勾选符号组成的原创隐私安全示意图。</desc>
+  <rect width="800" height="480" rx="28" fill="#eef7f5" />
+  <text x="48" y="56" fill="#2c8c82" font-size="18" font-weight="700" letter-spacing="3">DIGITAL SAFETY</text>
+  <text x="48" y="94" fill="#242321" font-size="30" font-weight="800">同意也适用于屏幕与云端</text>
+  <rect x="286" y="140" width="228" height="200" rx="26" fill="#fff" stroke="#2c8c82" stroke-width="5" />
+  <rect x="306" y="170" width="188" height="130" rx="12" fill="#e0f1ee" />
+  <circle cx="400" cy="352" r="9" fill="#2c8c82" />
+  <path d="M356 258v-18c0-25 20-45 44-45s44 20 44 45v18" fill="none" stroke="#d95f4e" stroke-width="10" stroke-linecap="round" />
+  <rect x="340" y="250" width="120" height="86" rx="14" fill="#d95f4e" />
+  <circle cx="400" cy="284" r="10" fill="#fff" /><path d="M400 294v20" stroke="#fff" stroke-width="6" stroke-linecap="round" />
+  <g font-family="Microsoft YaHei, sans-serif" fill="#45413d" font-size="16">
+    <circle cx="100" cy="180" r="7" fill="#2c8c82" /><text x="118" y="186">不保存不愿留下的影像</text>
+    <circle cx="100" cy="256" r="7" fill="#2c8c82" /><text x="118" y="262">发送前再次确认对方身份</text>
+    <circle cx="100" cy="332" r="7" fill="#2c8c82" /><text x="118" y="338">遇到威胁先保留证据并求助</text>
+  </g>
+</svg>

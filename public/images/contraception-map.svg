@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" role="img" aria-labelledby="title desc">
+  <title id="title">避孕方式地图</title>
+  <desc id="desc">四类常见避孕方式的原创示意图，并提醒避孕不等于预防感染。</desc>
+  <rect width="800" height="480" rx="28" fill="#f1f8f6" />
+  <text x="48" y="56" fill="#2c8c82" font-size="18" font-weight="700" letter-spacing="3">CHOICE MAP</text>
+  <text x="48" y="94" fill="#242321" font-size="30" font-weight="800">先看需求，再看方法</text>
+  <g font-family="Microsoft YaHei, sans-serif">
+    <rect x="48" y="132" width="164" height="190" rx="20" fill="#fff" stroke="#b9ded7" />
+    <circle cx="130" cy="180" r="28" fill="#d95f4e" />
+    <path d="M130 164a16 16 0 100 32 16 16 0 000-32zm0 6v20m0 6v2" stroke="#fff" stroke-width="5" fill="none" stroke-linecap="round" />
+    <text x="130" y="238" text-anchor="middle" fill="#242321" font-size="19" font-weight="700">屏障法</text>
+    <text x="130" y="268" text-anchor="middle" fill="#6d6862" font-size="14">阻隔体液</text>
+    <text x="130" y="294" text-anchor="middle" fill="#6d6862" font-size="14">也能降低部分感染风险</text>
+    <rect x="228" y="132" width="164" height="190" rx="20" fill="#fff" stroke="#b9ded7" />
+    <circle cx="310" cy="180" r="28" fill="#2c8c82" />
+    <path d="M296 180h28m-14-14v28" stroke="#fff" stroke-width="5" stroke-linecap="round" />
+    <text x="310" y="238" text-anchor="middle" fill="#242321" font-size="19" font-weight="700">荷尔蒙法</text>
+    <text x="310" y="268" text-anchor="middle" fill="#6d6862" font-size="14">短效、长效、局部</text>
+    <text x="310" y="294" text-anchor="middle" fill="#6d6862" font-size="14">关注禁忌与漏用处理</text>
+    <rect x="408" y="132" width="164" height="190" rx="20" fill="#fff" stroke="#b9ded7" />
+    <circle cx="490" cy="180" r="28" fill="#7a63a8" />
+    <path d="M478 180h24m-12-12v24" stroke="#fff" stroke-width="5" stroke-linecap="round" />
+    <text x="490" y="238" text-anchor="middle" fill="#242321" font-size="19" font-weight="700">长效方法</text>
+    <text x="490" y="268" text-anchor="middle" fill="#6d6862" font-size="14">放置后仍需随访</text>
+    <text x="490" y="294" text-anchor="middle" fill="#6d6862" font-size="14">不一定适合所有人</text>
+    <rect x="588" y="132" width="164" height="190" rx="20" fill="#fff" stroke="#b9ded7" />
+    <circle cx="670" cy="180" r="28" fill="#c38a29" />
+    <path d="M670 164v22l14 8" stroke="#fff" stroke-width="5" fill="none" stroke-linecap="round" />
+    <text x="670" y="238" text-anchor="middle" fill="#242321" font-size="19" font-weight="700">紧急避孕</text>
+    <text x="670" y="268" text-anchor="middle" fill="#6d6862" font-size="14">时间越早越方便</text>
+    <text x="670" y="294" text-anchor="middle" fill="#6d6862" font-size="14">先咨询再选择</text>
+  </g>
+  <rect x="48" y="362" width="704" height="66" rx="16" fill="#d95f4e" />
+  <text x="400" y="403" text-anchor="middle" fill="#fff" font-size="19" font-weight="700">避孕不等于预防感染：安全套在这件事上不可替代</text>
+</svg>

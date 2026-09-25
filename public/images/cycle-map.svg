@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" role="img" aria-labelledby="title desc">
+  <title id="title">月经周期四阶段示意图</title>
+  <desc id="desc">用曲线和四个阶段展示月经周期的常见变化，强调每个人不同。</desc>
+  <rect width="800" height="480" rx="28" fill="#fff5f3" />
+  <text x="48" y="56" fill="#a84437" font-size="18" font-weight="700" letter-spacing="3">CYCLE OVERVIEW</text>
+  <text x="48" y="94" fill="#242321" font-size="30" font-weight="800">周期是变化的循环，不是死线</text>
+  <line x1="80" y1="330" x2="720" y2="330" stroke="#d9cec4" stroke-width="2" />
+  <path d="M80 300C160 250 210 260 280 220S400 120 470 210 590 340 720 280" fill="none" stroke="#d95f4e" stroke-width="6" stroke-linecap="round" />
+  <circle cx="110" cy="292" r="9" fill="#d95f4e" /><circle cx="275" cy="222" r="9" fill="#2c8c82" /><circle cx="468" cy="206" r="9" fill="#c38a29" /><circle cx="650" cy="318" r="9" fill="#7a63a8" />
+  <g font-family="Microsoft YaHei, sans-serif" font-size="16" text-anchor="middle">
+    <text x="110" y="372" fill="#a84437" font-weight="700">月经期</text><text x="110" y="396" fill="#6d6862">出血与不适</text>
+    <text x="275" y="372" fill="#2c8c82" font-weight="700">卵泡期</text><text x="275" y="396" fill="#6d6862">多数人逐渐变长</text>
+    <text x="468" y="372" fill="#c38a29" font-weight="700">排卵期</text><text x="468" y="396" fill="#6d6862">可能短暂变化</text>
+    <text x="650" y="372" fill="#7a63a8" font-weight="700">黄体期</text><text x="650" y="396" fill="#6d6862">症状可能波动</text>
+  </g>
+  <rect x="80" y="424" width="640" height="34" rx="12" fill="#fff" stroke="#f0c9c0" />
+  <text x="400" y="447" text-anchor="middle" fill="#6d6862" font-family="Microsoft YaHei, sans-serif" font-size="14">示意图，不代表排卵预测或诊断</text>
+</svg>

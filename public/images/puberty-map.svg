@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" role="img" aria-labelledby="title desc">
+  <title id="title">青春期变化时间线</title>
+  <desc id="desc">用非刻度时间线表示青春期变化存在明显个体差异。</desc>
+  <rect width="800" height="480" rx="28" fill="#f2f6fb" />
+  <text x="48" y="56" fill="#4b6f9c" font-size="18" font-weight="700" letter-spacing="3">GROWTH TIMELINE</text>
+  <text x="48" y="94" fill="#242321" font-size="30" font-weight="800">成长没有统一的时间表</text>
+  <path d="M90 268H710" stroke="#4b6f9c" stroke-width="5" stroke-linecap="round" />
+  <g fill="#fff" stroke="#4b6f9c" stroke-width="5">
+    <circle cx="130" cy="268" r="18" /><circle cx="300" cy="268" r="18" /><circle cx="470" cy="268" r="18" /><circle cx="640" cy="268" r="18" />
+  </g>
+  <g font-family="Microsoft YaHei, sans-serif" text-anchor="middle">
+    <text x="130" y="222" fill="#242321" font-size="19" font-weight="700">身体变化</text><text x="130" y="320" fill="#6d6862" font-size="14">可能先后不同</text>
+    <text x="300" y="222" fill="#242321" font-size="19" font-weight="700">情绪与睡眠</text><text x="300" y="320" fill="#6d6862" font-size="14">会随成长变化</text>
+    <text x="470" y="222" fill="#242321" font-size="19" font-weight="700">月经与发育</text><text x="470" y="320" fill="#6d6862" font-size="14">有人早，有人晚</text>
+    <text x="640" y="222" fill="#242321" font-size="19" font-weight="700">逐步稳定</text><text x="640" y="320" fill="#6d6862" font-size="14">仍有个体差异</text>
+  </g>
+  <rect x="90" y="392" width="620" height="48" rx="14" fill="#e7effa" />
+  <text x="400" y="422" text-anchor="middle" fill="#4b6f9c" font-family="Microsoft YaHei, sans-serif" font-size="15" font-weight="700">如果变化让你担心，咨询专业人员比自行比较更可靠</text>
+</svg>

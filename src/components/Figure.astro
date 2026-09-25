@@ -1,0 +1,18 @@
+---
+import type { Figure } from '../data/articles';
+
+type Props = {
+  figure: Figure;
+  index?: number;
+};
+
+const { figure, index } = Astro.props;
+---
+
+<figure class="figure">
+  <img src={figure.src} alt={figure.alt} loading="lazy" decoding="async" width="960" height="540" />
+  <figcaption>
+    {index !== undefined && <span class="figure-index">图 {index}</span>}
+    {figure.caption}
+  </figcaption>
+</figure>

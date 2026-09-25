@@ -1,11 +1,13 @@
 ---
 interface Props {
   label?: string;
+  title?: string;
 }
 
-const { label = '温馨提示' } = Astro.props;
+const { label, title } = Astro.props;
+const heading = label ?? title ?? '温馨提示';
 ---
 <aside class="info-note">
-  <strong>{label}</strong>
+  <strong>{heading}</strong>
   <div><slot /></div>
 </aside>

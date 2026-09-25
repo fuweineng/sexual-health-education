@@ -2,18 +2,43 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import InfoNote from '../components/InfoNote.astro';
 import TopicCard from '../components/TopicCard.astro';
+import Figure from '../components/Figure.astro';
 import { topics } from '../data/topics';
+import { articles } from '../data/articles';
+
+const totalMinutes = articles.reduce((sum, article) => sum + Number.parseInt(article.readTime, 10), 0);
 ---
+
 <BaseLayout>
   <section class="hero">
     <div class="container hero-inner">
       <p class="eyebrow">Independent sex education</p>
       <h1>把复杂的性健康知识，<em>讲清楚</em>。</h1>
-      <p class="lede">一个独立编写的中文科普站，聊聊同意、避孕、检测和身体常识。我们相信，好的信息应该让人更安心，而不是更焦虑。</p>
+      <p class="lede">
+        一个独立编写的中文科普站，聊聊同意、避孕、检测、身体和数字生活。我们相信，好的信息应该让人更安心，而不是更焦虑。
+      </p>
       <div class="hero-actions">
         <a class="button button-primary" href="#topics">从基础话题开始</a>
-        <a class="button button-secondary" href="/about/">了解本站</a>
+        <a class="button button-secondary" href="/myths/">先看常见误区</a>
       </div>
+      <dl class="hero-stats">
+        <div>
+          <dt>{articles.length}</dt>
+          <dd>篇原创长文</dd>
+        </div>
+        <div>
+          <dt>{topics.length}</dt>
+          <dd>个主题入口</dd>
+        </div>
+        <div>
+          <dt>{totalMinutes}</dt>
+          <dd>分钟阅读量</dd>
+        </div>
+        <div>
+          <dt>100%</dt>
+          <dd>原创图示</dd>
+        </div>
+      </dl>
     </div>
   </section>
 
@@ -24,10 +49,71 @@ import { topics } from '../data/topics';
           <p class="eyebrow">Start here</p>
           <h2>先从最常见的问题开始</h2>
         </div>
-        <p>每篇文章都尽量使用清楚的语言，并在文末列出参考来源。健康情况因人而异，必要时请咨询专业人员。</p>
+        <p>每篇文章都尽量使用清楚的语言，配置原创示意图，并在文末列出参考来源。健康情况因人而异，必要时请咨询专业人员。</p>
       </div>
       <div class="topics-grid">
         {topics.map((topic) => <TopicCard topic={topic} />)}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-soft">
+    <div class="container">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Deep dive</p>
+          <h2>用图示理解，而不是死记名词</h2>
+        </div>
+        <p>本站所有插图都是自行绘制的示意图，用于表达结构与流程，不代表医学诊断结果。</p>
+      </div>
+      <div class="figure-grid">
+        <Figure
+          figure={{
+            src: '/images/cycle-map.svg',
+            alt: '展示月经周期阶段的原创曲线图',
+            caption: '月经周期：阶段示意，不代表个人预测。',
+          }}
+        />
+        <Figure
+          figure={{
+            src: '/images/contraception-map.svg',
+            alt: '四类常见避孕方式的原创示意图',
+            caption: '避孕方法：按需求选择，而不是按流行度选择。',
+          }}
+        />
+        <Figure
+          figure={{
+            src: '/images/consent-loop.svg',
+            alt: '持续沟通循环图',
+            caption: '同意：持续确认，而不是一次性开关。',
+          }}
+        />
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Reference</p>
+          <h2>两个查问题的入口</h2>
+        </div>
+        <p>遇到具体说法或名词时，可以先查<a href="/myths/">常见误区</a>和<a href="/glossary/">术语表</a>。</p>
+      </div>
+      <div class="reference-grid">
+        <a class="reference-card" href="/myths/">
+          <h3>二十个常见误区</h3>
+          <p>从“第一次不会怀孕”到紧急避孕的误解，附带更准确的理解。</p>
+        </a>
+        <a class="reference-card" href="/glossary/">
+          <h3>性健康术语表</h3>
+          <p>用中性、简洁的语言解释同意、边界、窗口期等常见术语。</p>
+        </a>
+        <a class="reference-card" href="/sources/">
+          <h3>来源与授权说明</h3>
+          <p>编写依据、图示来源、更新时间和反馈方式。</p>
+        </a>
       </div>
     </div>
   </section>
@@ -56,6 +142,11 @@ import { topics } from '../data/topics';
           <span class="principle-number">03 / KIND</span>
           <h3>不制造羞耻</h3>
           <p>好奇、犹豫和提问都很正常。站点不评判读者，也不把健康问题变成道德评价。</p>
+        </div>
+        <div class="principle">
+          <span class="principle-number">04 / ORIGINAL</span>
+          <h3>只用原创图示</h3>
+          <p>站内插图由本站自行绘制，避免版权不清的素材，也不使用可能带有暗示性的图片。</p>
         </div>
       </div>
     </div>

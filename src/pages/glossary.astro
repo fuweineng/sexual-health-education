@@ -1,0 +1,43 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import InfoNote from '../components/InfoNote.astro';
+import { glossary } from '../data/glossary';
+---
+
+<BaseLayout title="性健康术语表｜两性健康科普" description="用中性、简洁的语言解释常见性健康与同意相关术语。">
+  <article class="prose">
+    <p class="eyebrow">术语表</p>
+    <h1>常见术语</h1>
+    <p class="lede">这些术语用于统一沟通方式，减少因为说法不同造成的误解。</p>
+
+    <InfoNote title="如何使用术语表">
+      术语表用于统一说法，不代表任何一种标签或关系模式更“正常”。涉及自身情况时，请结合<a href="/topics/body-literacy/">身体与生理基础</a>等页面了解背景。
+    </InfoNote>
+
+    <dl class="glossary">
+      {glossary.map((item) => (
+        <div>
+          <dt>{item.term}</dt>
+          <dd>{item.definition}</dd>
+        </div>
+      ))}
+    </dl>
+
+    <section>
+      <h2>关于术语的使用</h2>
+      <p>
+        术语是描述工具，不是评价标准。描述彼此的性取向、性别表达或关系偏好时，应该使用对方认可的说法；如果不确定，可以直接询问对方希望怎么称呼。
+      </p>
+    </section>
+  </article>
+</BaseLayout>
+
+<style>
+  @media (min-width: 48rem) {
+    .glossary {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  }
+</style>
