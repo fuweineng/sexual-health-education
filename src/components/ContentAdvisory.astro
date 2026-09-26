@@ -1,0 +1,14 @@
+---
+type Props = {
+  text: string;
+};
+
+const { text } = Astro.props;
+---
+
+<aside class="content-advisory" role="note" aria-label="内容提示">
+  <strong>内容提示</strong>
+  <div>
+    {text} 页面中的部分图片默认遮挡，需要点击才会显示；如果这不是你想看的内容，可以随时离开。
+  </div>
+</aside>

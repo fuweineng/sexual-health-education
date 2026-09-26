@@ -9,10 +9,21 @@ type Props = {
 
 const { figure, index } = Astro.props;
 const credit = findCredit(figure.src);
+const revealId = `reveal-${index ?? 0}-${figure.src.replace(/[^a-zA-Z0-9]/g, '')}`;
 ---
 
 <figure class="figure">
-  <img src={figure.src} alt={figure.alt} loading="lazy" decoding="async" width="960" height="540" />
+  {figure.graphic ? (
+    <div class="graphic">
+      <input type="checkbox" id={revealId} class="graphic-toggle" />
+      <label class="graphic-mask" for={revealId}>
+        <img src={figure.src} alt={figure.alt} loading="lazy" decoding="async" width="960" height="540" />
+        <span class="graphic-hint">点击显示图片（含真实身体或临床照片）</span>
+      </label>
+    </div>
+  ) : (
+    <img src={figure.src} alt={figure.alt} loading="lazy" decoding="async" width="960" height="540" />
+  )}
   <figcaption>
     <span class="figure-line">
       {index !== undefined && <span class="figure-index">图 {index}</span>}
