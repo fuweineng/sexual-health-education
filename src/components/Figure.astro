@@ -22,7 +22,7 @@ const credit = findCredit(figure.src);
       <span class="figure-credit">
         图片：{credit.artist}，{credit.license}
         <a href={credit.source} target="_blank" rel="noopener noreferrer">来源</a>
-        {credit.licenseUrl && (
+        {credit.licenseUrl && credit.licenseUrl !== credit.source && (
           <a href={credit.licenseUrl} target="_blank" rel="noopener noreferrer">许可条款</a>
         )}
       </span>
