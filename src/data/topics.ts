@@ -17,7 +17,7 @@ export const topics: Topic[] = [
     enTitle: 'Human Reproductive System',
     summary: '从结构、功能和发育开始的系统入门。',
     readTime: '10 分钟',
-    figure: '/images/real/body-repro-system.png',
+    figure: '/images/real/body-repro-system.avif',
     accent: 'accent',
   },
   {
@@ -27,7 +27,7 @@ export const topics: Topic[] = [
     enTitle: 'Puberty and Adolescence',
     summary: '没有统一时间表的身体与情绪变化。',
     readTime: '8 分钟',
-    figure: '/images/real/puberty-students.jpg',
+    figure: '/images/real/puberty-students.avif',
     accent: 'violet',
   },
   {
@@ -37,7 +37,7 @@ export const topics: Topic[] = [
     enTitle: 'Menstrual Cycle',
     summary: '周期不是钟表，记录方式和就医信号怎么判断。',
     readTime: '8 分钟',
-    figure: '/images/real/cycle-hormone-zh.png',
+    figure: '/images/real/cycle-hormone-zh.avif',
     accent: 'teal',
   },
   {
@@ -47,7 +47,7 @@ export const topics: Topic[] = [
     enTitle: 'Sexual Activity and Consent',
     summary: '把同意当成持续沟通，而不是一次性开关。',
     readTime: '7 分钟',
-    figure: '/images/real/consent-talk.jpg',
+    figure: '/images/real/consent-talk.avif',
     accent: 'teal',
   },
   {
@@ -57,7 +57,7 @@ export const topics: Topic[] = [
     enTitle: 'Sexual Physiology',
     summary: '身体如何反应，以及个体差异有多大。',
     readTime: '8 分钟',
-    figure: '/images/real/physiology-cover.jpg',
+    figure: '/images/real/physiology-cover.avif',
     accent: 'gold',
   },
   {
@@ -67,7 +67,7 @@ export const topics: Topic[] = [
     enTitle: 'Sexual Orientation',
     summary: '标签是工具，隐私、披露和支持更重要。',
     readTime: '7 分钟',
-    figure: '/images/real/orientation-flag.jpg',
+    figure: '/images/real/orientation-flag.avif',
     accent: 'accent',
   },
   {
@@ -77,7 +77,7 @@ export const topics: Topic[] = [
     enTitle: 'Contraception',
     summary: '常见方法的作用、限制和决策问题清单。',
     readTime: '10 分钟',
-    figure: '/images/real/contraception-pills.jpg',
+    figure: '/images/real/contraception-pills.avif',
     accent: 'violet',
   },
   {
@@ -87,7 +87,7 @@ export const topics: Topic[] = [
     enTitle: 'Sexually Transmitted Diseases',
     summary: '无症状不等于无风险，检测与复诊安排说明。',
     readTime: '9 分钟',
-    figure: '/images/real/sti-hiv-kit.jpg',
+    figure: '/images/real/sti-hiv-kit.avif',
     accent: 'gold',
   },
   {
@@ -97,7 +97,7 @@ export const topics: Topic[] = [
     enTitle: 'Sex and Information',
     summary: '如何判断一条性健康说法是否可靠。',
     readTime: '8 分钟',
-    figure: '/images/real/info-books.jpg',
+    figure: '/images/real/info-books.avif',
     accent: 'teal',
   },
   {
@@ -107,7 +107,7 @@ export const topics: Topic[] = [
     enTitle: 'Other Media',
     summary: '可靠资料的获取渠道与素材使用规范。',
     readTime: '6 分钟',
-    figure: '/images/real/resources-paper.jpg',
+    figure: '/images/real/resources-paper.avif',
     accent: 'accent',
   },
 ];

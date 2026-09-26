@@ -11,7 +11,7 @@ export type Credit = {
 
 export const credits: Credit[] = [
   {
-    file: 'consent-talk.jpg',
+    file: 'consent-talk.avif',
     title: 'Communication to promote equity, Burundi (25166138278).jpg',
     artist: 'USAID in Africa',
     license: '公有领域（Public domain）',
@@ -19,7 +19,7 @@ export const credits: Credit[] = [
     pages: ['性行为与同意', '性行为准备清单', '性取向与自我认同'],
   },
   {
-    file: 'contraception-pills.jpg',
+    file: 'contraception-pills.avif',
     title: 'Birth control pills.jpg',
     artist: 'Irma2403',
     license: 'CC BY-SA 3.0',
@@ -28,7 +28,7 @@ export const credits: Credit[] = [
     pages: ['避孕与选择'],
   },
   {
-    file: 'contraception-condom.jpg',
+    file: 'contraception-condom.avif',
     title: 'Condom-SU.jpg',
     artist: 'User:Putnik（扫描）',
     license: '公有领域（Public domain）',
@@ -36,7 +36,7 @@ export const credits: Credit[] = [
     pages: ['避孕与选择'],
   },
   {
-    file: 'sti-test-cdc.jpg',
+    file: 'sti-test-cdc.avif',
     title: 'Rapid point-of-care syphilis test-CDC.jpg',
     artist: '美国疾病控制与预防中心（CDC）',
     license: '公有领域（Public domain）',
@@ -44,7 +44,7 @@ export const credits: Credit[] = [
     pages: ['性传播疾病'],
   },
   {
-    file: 'sti-hiv-kit.jpg',
+    file: 'sti-hiv-kit.avif',
     title: 'HIV Antibody Testing Kit (48140260338).jpg',
     artist: 'NIAID（美国国家过敏症与传染病研究所）',
     license: 'CC BY 2.0',
@@ -53,7 +53,7 @@ export const credits: Credit[] = [
     pages: ['性传播疾病'],
   },
   {
-    file: 'body-repro-system.png',
+    file: 'body-repro-system.avif',
     title: 'Blausen 0399 FemaleReproSystem 01.png',
     artist: 'Blausen.com staff（原作者 BruceBlaus），WikiJournal of Medicine 1(2)，DOI:10.15347/wjm/2014.010',
     license: 'CC BY 3.0',
@@ -62,7 +62,7 @@ export const credits: Credit[] = [
     pages: ['人类生殖系统'],
   },
   {
-    file: 'cycle-hormone-zh.png',
+    file: 'cycle-hormone-zh.avif',
     title: 'Estradiol during menstrual cycle zh-CN.png',
     artist: 'ComingWel（译制），原图 Mikael Häggström',
     license: 'CC0',
@@ -71,7 +71,7 @@ export const credits: Credit[] = [
     pages: ['月经周期'],
   },
   {
-    file: 'menstrual-products.jpg',
+    file: 'menstrual-products.avif',
     title: 'Set-feminine-hygiene-products-menstruation-days-sanitary-pads-tampons-menstrual-cup-pants 168129-1797.jpg',
     artist: 'Khilolakhon',
     license: 'CC BY-SA 4.0',
@@ -80,7 +80,7 @@ export const credits: Credit[] = [
     pages: ['月经周期'],
   },
   {
-    file: 'puberty-students.jpg',
+    file: 'puberty-students.avif',
     title: 'Biology study group (6146861188).jpg',
     artist: 'Barry Pousman',
     license: 'CC BY 2.0',
@@ -89,7 +89,7 @@ export const credits: Credit[] = [
     pages: ['青春期与成长'],
   },
   {
-    file: 'emergency-pill.jpg',
+    file: 'emergency-pill.avif',
     title: 'Píldora del día después.jpg',
     artist: 'HRA Pharma',
     license: 'CC BY-SA 4.0',
@@ -98,7 +98,7 @@ export const credits: Credit[] = [
     pages: ['紧急避孕'],
   },
   {
-    file: 'orientation-flag.jpg',
+    file: 'orientation-flag.avif',
     title: 'Rainbow Flag, Houston, Texas, June 2021.jpg',
     artist: 'Edward O. Uthman (Euthman)',
     license: 'CC BY 4.0',
@@ -107,7 +107,7 @@ export const credits: Credit[] = [
     pages: ['性取向与自我认同'],
   },
   {
-    file: 'digital-phone-lock.jpg',
+    file: 'digital-phone-lock.avif',
     title: 'Blackview A60 Smartphone Android mobile phone front face lock screen.jpg',
     artist: 'Acabashi',
     license: 'CC BY-SA 4.0',
@@ -116,7 +116,7 @@ export const credits: Credit[] = [
     pages: ['线上互动与隐私安全'],
   },
   {
-    file: 'myths-library.jpg',
+    file: 'myths-library.avif',
     title: 'MAFB library, knowledge is power 170321-F-CG053-0072.jpg',
     artist: 'Senior Airman Justin Armstrong（美国空军）',
     license: '公有领域（Public domain）',
@@ -124,7 +124,7 @@ export const credits: Credit[] = [
     pages: ['二十个常见误区'],
   },
   {
-    file: 'info-books.jpg',
+    file: 'info-books.avif',
     title: 'assorted book lot',
     artist: 'freestocks',
     license: 'Unsplash License',
@@ -133,7 +133,7 @@ export const credits: Credit[] = [
     pages: ['性与信息'],
   },
   {
-    file: 'physiology-cover.jpg',
+    file: 'physiology-cover.avif',
     title: '（手与花的柔焦照片）',
     artist: 'Olga Drach',
     license: 'Unsplash License',
@@ -142,7 +142,7 @@ export const credits: Credit[] = [
     pages: ['性生理', 'SSRI 与高潮'],
   },
   {
-    file: 'resources-paper.jpg',
+    file: 'resources-paper.avif',
     title: '（白色纸页纹理照片）',
     artist: 'jjying',
     license: 'Unsplash License',
@@ -151,7 +151,7 @@ export const credits: Credit[] = [
     pages: ['其他媒体', '文章'],
   },
   {
-    file: 'sperm-travel-direction.jpg',
+    file: 'sperm-travel-direction.avif',
     title: '图 1 精子行进方向，途经阴道 — 子宫颈 — 子宫 — 输卵管',
     artist: '佐藤 @sato_chito_',
     license: '性教育いらすと – 無料イラスト素材集 （有修改）',
@@ -161,7 +161,7 @@ export const credits: Credit[] = [
     note: '性教育いらすと – 無料イラスト素材集 （有修改）',
   },
   {
-    file: 'uterus-15-edited.png',
+    file: 'uterus-15-edited.avif',
     title: '图 2 输卵管特写，卵细胞与精子（图中示意为蓝色）结合并在子宫内着床',
     artist: '佐藤 @sato_chito_',
     license: '性教育いらすと – 無料イラスト素材集 （有修改）',
@@ -171,7 +171,7 @@ export const credits: Credit[] = [
     note: '性教育いらすと – 無料イラスト素材集 （有修改）',
   },
   {
-    file: '1.jpg',
+    file: '1.avif',
     title: '图 3 短效口服避孕药',
     artist: '生殖健康用品联盟',
     license: 'Unsplash License',
@@ -181,7 +181,7 @@ export const credits: Credit[] = [
     note: 'Unsplash',
   },
   {
-    file: '2.jpg',
+    file: '2.avif',
     title: '图 4 一种皮下埋植剂',
     artist: '生殖健康用品联盟',
     license: 'Unsplash License',
@@ -191,7 +191,7 @@ export const credits: Credit[] = [
     note: 'Unsplash',
   },
   {
-    file: '3.jpg',
+    file: '3.avif',
     title: '图 5 植入皮下埋植剂（视频截图）',
     artist: 'Vera de Kok',
     license: 'Wikimedia Commons（许可见原始文件页）',
@@ -201,7 +201,7 @@ export const credits: Credit[] = [
     note: 'Wikimedia Commons',
   },
   {
-    file: '4.jpg',
+    file: '4.avif',
     title: '图 6 避孕贴片',
     artist: '生殖健康用品联盟',
     license: 'Unsplash License',
@@ -211,7 +211,7 @@ export const credits: Credit[] = [
     note: 'Unsplash',
   },
   {
-    file: '5.jpg',
+    file: '5.avif',
     title: '图 7 阴道避孕环',
     artist: '生殖健康用品联盟',
     license: 'Unsplash License',
@@ -221,7 +221,7 @@ export const credits: Credit[] = [
     note: 'Unsplash',
   },
   {
-    file: '6.jpg',
+    file: '6.avif',
     title: '图 8 女用、男用避孕套',
     artist: '生殖健康用品联盟',
     license: 'Unsplash License',
@@ -231,7 +231,7 @@ export const credits: Credit[] = [
     note: 'Unsplash',
   },
   {
-    file: '8.jpg',
+    file: '8.avif',
     title: '图 10 展开的女用避孕套',
     artist: 'Ceridwen',
     license: 'Wikimedia Commons（许可见原始文件页）',
@@ -241,7 +241,7 @@ export const credits: Credit[] = [
     note: 'Wikimedia Commons',
   },
   {
-    file: '10.jpg',
+    file: '10.avif',
     title: '图 12 一种宫内节育器',
     artist: '生殖健康用品联盟',
     license: 'Unsplash License',
@@ -251,7 +251,7 @@ export const credits: Credit[] = [
     note: 'Unsplash',
   },
   {
-    file: 'Zwangerschapstesten.jpg',
+    file: 'Zwangerschapstesten.avif',
     title: '图 13 hCG 试验器具——验孕棒',
     artist: 'Zwager',
     license: 'Wikimedia Commons（许可见原始文件页）',
@@ -261,7 +261,7 @@ export const credits: Credit[] = [
     note: 'Wikimedia Commons',
   },
   {
-    file: '111.jpg',
+    file: '111.avif',
     title: '图 1 张开的女性阴部（外生殖器），图中没有描述阴毛',
     artist: 'GnolizX Sci-img',
     license: 'Wikimedia Commons（许可见原始文件页）',
@@ -271,7 +271,7 @@ export const credits: Credit[] = [
     note: 'Wikimedia Commons',
   },
   {
-    file: '114.jpg',
+    file: '114.avif',
     title: '图 2 女性生殖系统',
     artist: 'Witcater BruceBlaus',
     license: 'Wikimedia Commons（许可见原始文件页）',
@@ -281,7 +281,7 @@ export const credits: Credit[] = [
     note: 'Wikimedia Commons',
   },
   {
-    file: '115.jpg',
+    file: '115.avif',
     title: '图 3 女性的性兴奋',
     artist: 'Fotomannforever',
     license: 'Wikimedia Commons（许可见原始文件页）',
@@ -291,7 +291,7 @@ export const credits: Credit[] = [
     note: 'Wikimedia Commons',
   },
   {
-    file: 'Genital_Diversity_Expanded.jpg',
+    file: 'Genital_Diversity_Expanded.avif',
     title: '图 4 不同外形的女阴，其中一部分去除过阴毛',
     artist: 'Coupleabc Tom Marquez Hutanisa Ingrid w Alexkhandria2K Amateurlover Latin Temptation',
     license: 'Wikimedia Commons（许可见原始文件页）',
@@ -301,7 +301,7 @@ export const credits: Credit[] = [
     note: '改自 Wikimedia Commons 改自 Wikimedia Commons',
   },
   {
-    file: 'Weibliche_brust.jpg',
+    file: 'Weibliche_brust.avif',
     title: '图 5 乳房、乳晕和乳头',
     artist: 'Ralf Roletschek Sansbrassiere',
     license: 'Wikimedia Commons（许可见原始文件页）',
@@ -311,7 +311,7 @@ export const credits: Credit[] = [
     note: '改自 Wikimedia Commons',
   },
   {
-    file: 'MenstrualCycle_zh_hans.jpg',
+    file: 'MenstrualCycle_zh_hans.avif',
     title: '图 8 月经周期',
     artist: 'Chris 73 KaurJmeb Dingar',
     license: 'Wikimedia Commons（许可见原始文件页）',
@@ -321,7 +321,7 @@ export const credits: Credit[] = [
     note: 'Wikimedia Commons',
   },
   {
-    file: '121.jpg',
+    file: '121.avif',
     title: '图 9 亚洲男性外生殖器（疲软状态，包皮覆盖）',
     artist: 'Ganlin88',
     license: 'Wikimedia Commons（许可见原始文件页）',
@@ -331,7 +331,7 @@ export const credits: Credit[] = [
     note: 'Wikimedia Commons',
   },
   {
-    file: '122.jpg',
+    file: '122.avif',
     title: '图 10 阴茎（系带面，包皮翻开）',
     artist: 'Cheywen',
     license: 'Wikimedia Commons（许可见原始文件页）',
@@ -341,7 +341,7 @@ export const credits: Credit[] = [
     note: 'Wikimedia Commons',
   },
   {
-    file: '123.jpg',
+    file: '123.avif',
     title: '图 11 男性生殖系统',
     artist: 'Tsaitgaist alt.sex FAQ',
     license: 'Wikimedia Commons（许可见原始文件页）',
@@ -351,7 +351,7 @@ export const credits: Credit[] = [
     note: 'Wikimedia Commons',
   },
   {
-    file: '122_1.jpg',
+    file: '122_1.avif',
     title: '图 12 男性的性兴奋',
     artist: 'Cmppp',
     license: 'Wikimedia Commons（许可见原始文件页）',
@@ -361,7 +361,7 @@ export const credits: Credit[] = [
     note: '改自 Wikimedia Commons',
   },
   {
-    file: 'Various_size_penises.jpg',
+    file: 'Various_size_penises.avif',
     title: '图 13 不同外形的、勃起状态的阴茎，其中一部分去除过阴毛',
     artist: 'ShavedCock Wumingbai Cabbageinaletterbox Barebi 等',
     license: 'Wikimedia Commons（许可见原始文件页）',
@@ -371,7 +371,7 @@ export const credits: Credit[] = [
     note: '改自 Wikimedia Commons',
   },
   {
-    file: '124.jpg',
+    file: '124.avif',
     title: '图 14 精液（未液化）',
     artist: 'X.Ran Lin',
     license: '公有领域',
@@ -380,7 +380,7 @@ export const credits: Credit[] = [
     note: '公有领域',
   },
   {
-    file: 'Human_genitalia.jpg',
+    file: 'Human_genitalia.avif',
     title: '图 15 男女外生殖器基于相同的胚胎',
     artist: 'Sciencia58',
     license: 'Wikimedia Commons（许可见原始文件页）',
@@ -390,7 +390,7 @@ export const credits: Credit[] = [
     note: '改自 Wikimedia Commons',
   },
   {
-    file: 'menstrual-cycle-example-vertical.jpg',
+    file: 'menstrual-cycle-example-vertical.avif',
     title: '图 1 一位志愿者记录的自己的月经周期',
     artist: 'Linn',
     license: '自制',
@@ -399,7 +399,7 @@ export const credits: Credit[] = [
     note: '自制',
   },
   {
-    file: 'Adolescent_Period_Average_girl_4_to_16_yo.jpg',
+    file: 'Adolescent_Period_Average_girl_4_to_16_yo.avif',
     title: '图 1 , 4 到 16 岁的女性',
     artist: 'Frank Kayley Shuttleworth',
     license: 'Wikimedia Commons（许可见原始文件页）',
@@ -409,7 +409,7 @@ export const credits: Credit[] = [
     note: 'The Adolescent Period , 1951. Wikimedia Commons',
   },
   {
-    file: 'Adolescent_Period_Average_boy_10_to_17_yo.jpg',
+    file: 'Adolescent_Period_Average_boy_10_to_17_yo.avif',
     title: '图 2 , 10 到 17 岁的男性',
     artist: 'Frank Kayley Shuttleworth',
     license: 'Wikimedia Commons（许可见原始文件页）',
@@ -419,7 +419,7 @@ export const credits: Credit[] = [
     note: 'The Adolescent Period , 1951. Wikimedia Commons',
   },
   {
-    file: 'Female_breasts_five_Tanner_stages.jpg',
+    file: 'Female_breasts_five_Tanner_stages.avif',
     title: '图 5 乳房发育的五个阶段',
     artist: 'Frank Kayley Shuttleworth',
     license: 'Wikimedia Commons（许可见原始文件页）',
@@ -429,7 +429,7 @@ export const credits: Credit[] = [
     note: 'The Adolescent Period , 1951. Wikimedia Commons',
   },
   {
-    file: 'Male_genitalia_five_Tanner_stages.jpg',
+    file: 'Male_genitalia_five_Tanner_stages.avif',
     title: '图 6 男性外阴发育的五个阶段',
     artist: 'Frank Kayley Shuttleworth',
     license: 'Wikimedia Commons（许可见原始文件页）',
@@ -439,7 +439,7 @@ export const credits: Credit[] = [
     note: 'The Adolescent Period , 1951. Wikimedia Commons',
   },
   {
-    file: 'Klimt_Mulher_sentada.jpg',
+    file: 'Klimt_Mulher_sentada.avif',
     title: '图 1 奥地利画家 Gustav Klimt 的画作《张开大腿的女人》',
     artist: 'Gustav Klimt',
     license: '公有领域',
@@ -448,7 +448,7 @@ export const credits: Credit[] = [
     note: '公有领域',
   },
   {
-    file: 'gravida.jpg',
+    file: 'gravida.avif',
     title: '图 2 一名怀孕 7 个月的女性',
     artist: 'Isabela Martins',
     license: 'Unsplash License',
@@ -458,7 +458,7 @@ export const credits: Credit[] = [
     note: 'Unsplash',
   },
   {
-    file: 'erogenous-zones.jpg',
+    file: 'erogenous-zones.avif',
     title: '图 1 人体的主要性感带',
     artist: 'Yohan Castel ，Linn 等',
     license: 'Wikimedia Commons（许可见原始文件页）',
@@ -478,7 +478,7 @@ export const credits: Credit[] = [
     note: 'Wikimedia Commons',
   },
   {
-    file: 'vaginal-lubrication-introduction.jpg',
+    file: 'vaginal-lubrication-introduction.avif',
     title: '图 3 阴道润滑原理',
     artist: 'Linn 等',
     license: '自制，使用的其它作品见图片说明',
@@ -487,7 +487,7 @@ export const credits: Credit[] = [
     note: '自制，使用的其它作品见图片说明',
   },
   {
-    file: 'bulbourethral-gland.jpg',
+    file: 'bulbourethral-gland.avif',
     title: '图 4 尿道球腺的位置',
     artist: '佐藤ちと',
     license: '性教育いらすと （有修改）',
@@ -506,7 +506,7 @@ export const credits: Credit[] = [
     note: '自制，公有领域',
   },
   {
-    file: 'Pre-ejaculate_fluid.jpg',
+    file: 'Pre-ejaculate_fluid.avif',
     title: '图 2 尿道球腺液',
     artist: 'Efghj',
     license: 'Wikimedia Commons（许可见原始文件页）',
@@ -516,7 +516,7 @@ export const credits: Credit[] = [
     note: 'Wikimedia Commons',
   },
   {
-    file: 'pad.jpg',
+    file: 'pad.avif',
     title: '图 1 一次性卫生巾，带有侧翼',
     artist: 'Linn',
     license: 'CC BY 4.0',
@@ -526,7 +526,7 @@ export const credits: Credit[] = [
     note: '自制，以 CC BY 4.0 协议发布于 Wikimedia Commons',
   },
   {
-    file: 'pad-cloth.jpg',
+    file: 'pad-cloth.avif',
     title: '图 2 布制成的可重复使用卫生巾，带有侧翼',
     artist: 'Baba79',
     license: 'Wikimedia Commons（许可见原始文件页）',
@@ -536,7 +536,7 @@ export const credits: Credit[] = [
     note: 'Wikimedia Commons',
   },
   {
-    file: 'pad-structure.jpg',
+    file: 'pad-structure.avif',
     title: '图 3 卫生巾结构',
     artist: 'Linn',
     license: 'CC BY 4.0',
@@ -546,7 +546,7 @@ export const credits: Credit[] = [
     note: '自制，以 CC BY 4.0 协议发布于 中文性教育资源网',
   },
   {
-    file: 'pad-use-v.jpg',
+    file: 'pad-use-v.avif',
     title: '图 4 卫生巾使用示意图',
     artist: '佐藤 @sato_chito_ ，Linn',
     license: '性教育いらすと – 無料イラスト素材集 （基于此素材制作）',
@@ -556,7 +556,7 @@ export const credits: Credit[] = [
     note: '性教育いらすと – 無料イラスト素材集 （基于此素材制作）',
   },
   {
-    file: 'Tampon_ob.jpg',
+    file: 'Tampon_ob.avif',
     title: '图 5 卫生棉条',
     artist: 'Michael KR',
     license: 'Wikimedia Commons（许可见原始文件页）',
@@ -566,7 +566,7 @@ export const credits: Credit[] = [
     note: 'Wikimedia Commons',
   },
   {
-    file: 'tampons-inside.jpg',
+    file: 'tampons-inside.avif',
     title: '图 6 卫生棉条置入体内的位置',
     artist: '佐藤 @sato_chito_',
     license: '基于 《タンポンのセット》 与 《女性器(子宮)の断面図》 制成',
@@ -576,7 +576,7 @@ export const credits: Credit[] = [
     note: '基于 《タンポンのセット》 与 《女性器(子宮)の断面図》 制成',
   },
   {
-    file: 'menstrual-cup.jpg',
+    file: 'menstrual-cup.avif',
     title: '图 7 月经杯',
     artist: 'Witchox',
     license: 'Wikimedia Commons（许可见原始文件页）',
@@ -586,7 +586,7 @@ export const credits: Credit[] = [
     note: 'Wikimedia Commons',
   },
   {
-    file: 'cup-x-ray.jpg',
+    file: 'cup-x-ray.avif',
     title: '图 8 X 光下的月经杯',
     artist: 'Hellerhoff',
     license: 'Wikimedia Commons（许可见原始文件页）',
@@ -596,7 +596,7 @@ export const credits: Credit[] = [
     note: 'Wikimedia Commons',
   },
   {
-    file: 'moon-cycle.jpg',
+    file: 'moon-cycle.avif',
     title: '（原站页面封面）',
     artist: 'Sanni Sahil',
     license: 'Unsplash License',
@@ -605,7 +605,7 @@ export const credits: Credit[] = [
     pages: ['月经周期'],
   },
   {
-    file: 'pa-cover.jpg',
+    file: 'pa-cover.avif',
     title: '（原站页面封面）',
     artist: 'Victoriano Izquierdo',
     license: 'Unsplash License',
@@ -615,7 +615,7 @@ export const credits: Credit[] = [
     note: '有修改',
   },
   {
-    file: '2-bg.jpg',
+    file: '2-bg.avif',
     title: '（原站页面封面）',
     artist: 'Taisiia Shestopal',
     license: 'Unsplash License',
@@ -624,7 +624,7 @@ export const credits: Credit[] = [
     pages: ['性行为与同意'],
   },
   {
-    file: 'aids-cover.jpg',
+    file: 'aids-cover.avif',
     title: '（原站页面封面）',
     artist: 'NIAID（美国国家过敏症与传染病研究所）',
     license: '见原始页面（Flickr）',
@@ -632,7 +632,7 @@ export const credits: Credit[] = [
     pages: ['艾滋病'],
   },
   {
-    file: 'Treponema_pallidum.jpg',
+    file: 'Treponema_pallidum.avif',
     title: '梅毒螺旋体（暗视野显微照片）',
     artist: 'CDC / Dr. David Cox',
     license: '公有领域（CDC PHIL）',
@@ -640,7 +640,7 @@ export const credits: Credit[] = [
     pages: ['梅毒'],
   },
   {
-    file: 'chancre.jpg',
+    file: 'chancre.avif',
     title: '硬下疳',
     artist: 'CDC / Robert Sumpter',
     license: '公有领域（CDC PHIL）',
@@ -649,7 +649,7 @@ export const credits: Credit[] = [
     note: '临床照片',
   },
   {
-    file: 'secondary_syphilis.jpg',
+    file: 'secondary_syphilis.avif',
     title: '二期梅毒皮疹',
     artist: 'CDC',
     license: '公有领域（CDC PHIL）',
@@ -658,7 +658,7 @@ export const credits: Credit[] = [
     note: '临床照片',
   },
   {
-    file: 'Neisseria_gonorrhoeae.jpg',
+    file: 'Neisseria_gonorrhoeae.avif',
     title: '淋病奈瑟菌显微照片',
     artist: 'CDC / Antibiotic Resistance Coordination and Strategy Unit',
     license: '公有领域（CDC PHIL）',
@@ -666,7 +666,7 @@ export const credits: Credit[] = [
     pages: ['淋病'],
   },
   {
-    file: 'SOA-gonorroe-male.jpg',
+    file: 'SOA-gonorroe-male.avif',
     title: '男性淋病症状示意',
     artist: 'SOA-AIDS Amsterdam',
     license: 'Wikimedia Commons（许可见原始文件页）',
@@ -674,7 +674,7 @@ export const credits: Credit[] = [
     pages: ['淋病'],
   },
   {
-    file: 'SOA-gonorroe-female.jpg',
+    file: 'SOA-gonorroe-female.avif',
     title: '女性淋病症状示意',
     artist: 'SOA-AIDS Amsterdam',
     license: 'Wikimedia Commons（许可见原始文件页）',
@@ -682,7 +682,7 @@ export const credits: Credit[] = [
     pages: ['淋病'],
   },
   {
-    file: 'Condyloma_acuminatum-low_mag.jpg',
+    file: 'Condyloma_acuminatum-low_mag.avif',
     title: '尖锐湿疣病理切片（低倍）',
     artist: 'Michael Bonert',
     license: 'CC BY-SA 3.0',
@@ -691,7 +691,7 @@ export const credits: Credit[] = [
     pages: ['生殖器疣'],
   },
   {
-    file: 'SOA-Condylomata-acuminata-female.jpg',
+    file: 'SOA-Condylomata-acuminata-female.avif',
     title: '女性外阴尖锐湿疣示意',
     artist: 'SOA-AIDS Amsterdam',
     license: 'Wikimedia Commons（许可见原始文件页）',
@@ -699,7 +699,7 @@ export const credits: Credit[] = [
     pages: ['生殖器疣'],
   },
   {
-    file: 'Papulas_perladas_glande_2.jpg',
+    file: 'Papulas_perladas_glande_2.avif',
     title: '龟头冠状部珍珠样丘疹',
     artist: 'Wikipicturesxd',
     license: 'Wikimedia Commons（许可见原始文件页）',
