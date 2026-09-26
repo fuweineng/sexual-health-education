@@ -66,14 +66,7 @@ const isActive = (href: string) => currentPath === href || (href !== '/' && curr
           <a href="/article/" aria-current={isActive('/article/') ? 'page' : undefined}>文章</a>
           <a href="/dict/" aria-current={isActive('/dict/') ? 'page' : undefined}>词典</a>
 
-          <details class="nav-drop" open={false}>
-            <summary class={isActive('/general/') ? 'is-active' : undefined}>站务</summary>
-            <div class="nav-panel nav-panel-compact">
-              {siteLinks.map((link) => (
-                <a href={link.href} aria-current={isActive(link.href) ? 'page' : undefined}>{link.label}</a>
-              ))}
-            </div>
-          </details>
+          <a href="/general/copyright/" aria-current={isActive('/general/') ? 'page' : undefined}>版权许可</a>
 
           <a href="/sitemap/" aria-current={isActive('/sitemap/') ? 'page' : undefined}>站点地图</a>
         </nav>

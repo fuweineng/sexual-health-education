@@ -20,9 +20,7 @@ const articleEntries = [
 
 const otherEntries = [
   { title: '词典（性健康术语表）', href: '/dict/' },
-  ...siteLinks,
-  { title: '隐私政策', href: '/general/privacy-policy/' },
-  { title: '使用条款', href: '/general/terms-of-use/' },
+  ...siteLinks.map((link) => ({ title: link.label, href: link.href })),
 ];
 ---
 
@@ -81,7 +79,7 @@ const otherEntries = [
           <p class="eyebrow">Site</p>
           <h2>词典与站务</h2>
         </div>
-        <p>术语解释、版权与联系方式。</p>
+        <p>术语解释与版权信息。</p>
       </div>
       <ul class="sitemap-list">
         {otherEntries.map((entry) => <li><a href={entry.href}>{entry.title}</a></li>)}

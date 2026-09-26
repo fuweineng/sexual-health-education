@@ -28,6 +28,4 @@ export const mainLinks: NavLink[] = [
 
 export const siteLinks: NavLink[] = [
   { label: '版权许可', href: '/general/copyright/' },
-  { label: '来信沟通', href: '/general/communicate/' },
-  { label: '关于本站', href: '/general/about/' },
 ];
