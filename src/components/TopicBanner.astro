@@ -1,0 +1,21 @@
+---
+interface Props {
+  href: string;
+  title: string;
+  enTitle?: string;
+  figure?: string;
+}
+
+const { href, title, enTitle, figure } = Astro.props;
+---
+
+<a class="banner" href={href}>
+  {figure && (
+    <span class="banner-image" style={`background-image: url('${figure}')`} aria-hidden="true"></span>
+  )}
+  <span class="banner-cover" aria-hidden="true"></span>
+  <span class="banner-title">
+    <span class="banner-title-cn">{title}</span>
+    {enTitle && <span class="banner-title-en">{enTitle}</span>}
+  </span>
+</a>

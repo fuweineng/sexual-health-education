@@ -1,7 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import InfoNote from '../../components/InfoNote.astro';
-import Figure from '../../components/Figure.astro';
 import { myths } from '../../data/myths';
 ---
 
@@ -14,15 +13,6 @@ import { myths } from '../../data/myths';
     <InfoNote title="如何使用这份清单">
       这些条目用于帮助识别不可靠的说法，不用于自我诊断。遇到健康问题时，请咨询具备资质的医务人员。
     </InfoNote>
-
-    <Figure
-      index={1}
-      figure={{
-        src: '/images/real/myths-library.jpg',
-        alt: '图书馆书架与书本照片',
-        caption: '遇到让人惊讶的说法时，先看来源，再看是否有可靠证据支持。',
-      }}
-    />
 
     <ol class="myth-list">
       {myths.map((item) => (

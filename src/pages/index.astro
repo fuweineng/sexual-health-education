@@ -1,129 +1,36 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import InfoNote from '../components/InfoNote.astro';
-import TopicCard from '../components/TopicCard.astro';
-import Figure from '../components/Figure.astro';
+import TopicBanner from '../components/TopicBanner.astro';
 import { topics } from '../data/topics';
-import { articles } from '../data/articles';
-import { credits } from '../data/credits';
 
-const totalMinutes = articles.reduce((sum, article) => sum + Number.parseInt(article.readTime, 10), 0);
+const cards = [
+  ...topics.map((topic) => ({
+    href: topic.href,
+    title: topic.title,
+    enTitle: topic.enTitle,
+    figure: topic.figure,
+  })),
+  {
+    href: '/article/',
+    title: '文章',
+    enTitle: 'Articles',
+    figure: '/images/real/myths-library.jpg',
+  },
+];
 ---
 
 <BaseLayout>
-  <section class="hero">
-    <div class="container hero-inner">
-      <p class="eyebrow">Independent sex education</p>
-      <h1>把复杂的性健康知识，<em>讲清楚</em>。</h1>
-      <p class="lede">
-        一个独立编写的中文科普站，聊聊同意、避孕、检测、身体和数字生活。我们相信，好的信息应该让人更安心，而不是更焦虑。
-      </p>
-      <div class="hero-actions">
-        <a class="button button-primary" href="#topics">从基础话题开始</a>
-        <a class="button button-secondary" href="/article/common-myths/">先看常见误区</a>
-      </div>
-      <dl class="hero-stats">
-        <div>
-          <dt>{articles.length}</dt>
-          <dd>篇原创长文</dd>
-        </div>
-        <div>
-          <dt>{topics.length}</dt>
-          <dd>个主题入口</dd>
-        </div>
-        <div>
-          <dt>{totalMinutes}</dt>
-          <dd>分钟阅读量</dd>
-        </div>
-        <div>
-          <dt>{credits.length}</dt>
-          <dd>张图片逐项署名</dd>
-        </div>
-      </dl>
+  <div class="container index-main">
+    <div class="banner-list">
+      {cards.map((card) => <TopicBanner {...card} />)}
     </div>
-  </section>
 
-  <section class="section" id="topics">
-    <div class="container">
-      <div class="section-heading">
-        <div>
-          <p class="eyebrow">Start here</p>
-          <h2>先从最常见的问题开始</h2>
-        </div>
-        <p>每篇文章都尽量使用清楚的语言，配开放许可的图片并逐项署名，在文末列出参考来源。健康情况因人而异，必要时请咨询专业人员。</p>
-      </div>
-      <div class="topics-grid">
-        {topics.map((topic) => <TopicCard topic={topic} />)}
-      </div>
-    </div>
-  </section>
-
-  <section class="section section-soft">
-    <div class="container">
-      <div class="section-heading">
-        <div>
-          <p class="eyebrow">Deep dive</p>
-          <h2>用图片理解，而不是死记名词</h2>
-        </div>
-        <p>照片与图表均来自公有领域或开放许可素材，署名与许可条款见图注和<a href="/general/copyright/">版权许可</a>。</p>
-      </div>
-      <div class="figure-grid">
-        <Figure
-          figure={{
-            src: '/images/real/cycle-hormone-zh.png',
-            alt: '月经周期中雌激素水平变化的中文图表',
-            caption: '月经周期：激素随阶段变化，不用于预测个人排卵时间。',
-          }}
-        />
-        <Figure
-          figure={{
-            src: '/images/real/contraception-pills.jpg',
-            alt: '口服避孕药铝箔板照片',
-            caption: '避孕方法：按需求选择，而不是按流行度选择。',
-          }}
-        />
-        <Figure
-          figure={{
-            src: '/images/real/sti-hiv-kit.jpg',
-            alt: 'HIV 抗体检测试剂盒照片',
-            caption: '检测工具：重点在于检测时机与复测安排。',
-          }}
-        />
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <div class="section-heading">
-        <div>
-          <p class="eyebrow">Reference</p>
-          <h2>两个查问题的入口</h2>
-        </div>
-        <p>遇到具体说法或名词时，可以先查<a href="/article/common-myths/">常见误区</a>和<a href="/dict/">术语表</a>。</p>
-      </div>
-      <div class="reference-grid">
-        <a class="reference-card" href="/article/common-myths/">
-          <h3>二十个常见误区</h3>
-          <p>从“第一次不会怀孕”到紧急避孕的误解，附带更准确的理解。</p>
-        </a>
-        <a class="reference-card" href="/dict/">
-          <h3>性健康术语表</h3>
-          <p>用中性、简洁的语言解释同意、边界、窗口期等常见术语。</p>
-        </a>
-        <a class="reference-card" href="/general/copyright/">
-          <h3>版权许可与图片来源</h3>
-          <p>文字许可条件、图片授权清单、署名与更新时间。</p>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <InfoNote label="阅读前请记住">
-        <p>这里的内容用于一般科普，不能替代面对面问诊、检验或治疗。如果出现急性疼痛、异常出血、发热、持续不适或可能暴露于感染风险，请及时联系当地医疗机构。</p>
-      </InfoNote>
-    </div>
-  </section>
+    <h1 class="index-title">性健康科普：一份独立编写的中文性教育读物</h1>
+    <p>
+      性贯穿生命始终，每个人都应该获得清楚、可靠、不制造焦虑的性健康知识。本站依据若干分类独立编写一般性科普内容，涵盖身体结构、青春期、月经、性行为与同意、性生理、性取向、避孕与性传播疾病等主题，并尽量在文末列出可核对的资料来源。
+    </p>
+    <p>
+      所有文字均为原创，图片只使用公有领域或开放许可素材并逐项署名，清单见<a href="/general/copyright/">版权许可</a>。内容用于一般健康教育，不能替代医生面对面的判断；遇到具体症状、用药或检测问题，请咨询具备资质的医务人员。
+    </p>
+  </div>
 </BaseLayout>
