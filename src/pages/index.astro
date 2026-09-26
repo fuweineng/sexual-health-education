@@ -22,7 +22,7 @@ const cards = [
 <BaseLayout>
   <div class="container index-main">
     <div class="banner-list">
-      {cards.map((card) => <TopicBanner {...card} />)}
+      {cards.map((card, index) => <TopicBanner {...card} priority={index === 0} />)}
     </div>
 
     <h1 class="index-title">性健康科普：一份独立编写的中文性教育读物</h1>

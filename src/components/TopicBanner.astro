@@ -4,14 +4,22 @@ interface Props {
   title: string;
   enTitle?: string;
   figure?: string;
+  priority?: boolean;
 }
 
-const { href, title, enTitle, figure } = Astro.props;
+const { href, title, enTitle, figure, priority = false } = Astro.props;
 ---
 
 <a class="banner" href={href}>
   {figure && (
-    <span class="banner-image" style={`background-image: url('${figure}')`} aria-hidden="true"></span>
+    <img
+      class="banner-image"
+      src={figure}
+      alt=""
+      loading={priority ? 'eager' : 'lazy'}
+      fetchpriority={priority ? 'high' : 'auto'}
+      decoding="async"
+    />
   )}
   <span class="banner-cover" aria-hidden="true"></span>
   <span class="banner-title">

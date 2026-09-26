@@ -11,5 +11,8 @@
   "dependencies": {
     "astro": "^7.3.5"
   },
-  "packageManager": "pnpm@10.14.0"
+  "packageManager": "pnpm@10.14.0",
+  "devDependencies": {
+    "sharp": "^0.35.4"
+  }
 }
