@@ -40,6 +40,21 @@ const sections = article.sections.map((section) => ({
   <section>
     <h2>{section.heading}</h2>
     {section.paragraphs?.map((paragraph) => <p set:html={paragraph} />)}
+    {section.table && (
+      <div class="table-wrap">
+        <table class="credit-table">
+          {section.table.caption && <caption>{section.table.caption}</caption>}
+          <thead>
+            <tr>{section.table.head.map((cell) => <th scope="col">{cell}</th>)}</tr>
+          </thead>
+          <tbody>
+            {section.table.rows.map((row) => (
+              <tr>{row.map((cell) => <td set:html={cell} />)}</tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    )}
     {section.bullets && (
       <ul>
         {section.bullets.map((bullet) => <li set:html={bullet} />)}
