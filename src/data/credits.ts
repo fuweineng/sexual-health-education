@@ -16,7 +16,7 @@ export const credits: Credit[] = [
     artist: 'USAID in Africa',
     license: '公有领域（Public domain）',
     source: 'https://commons.wikimedia.org/wiki/File:Communication_to_promote_equity,_Burundi_(25166138278).jpg',
-    pages: ['性行为与同意'],
+    pages: ['性行为与同意', '性行为准备清单'],
   },
   {
     file: 'contraception-pills.jpg',
@@ -139,7 +139,7 @@ export const credits: Credit[] = [
     license: 'Unsplash License',
     licenseUrl: 'https://unsplash.com/license',
     source: 'https://unsplash.com/photos/JSXRzpWmZiA',
-    pages: ['性生理'],
+    pages: ['性生理', 'SSRI 与高潮'],
   },
   {
     file: 'resources-paper.jpg',
@@ -483,7 +483,7 @@ export const credits: Credit[] = [
     artist: 'Linn 等',
     license: '自制，使用的其它作品见图片说明',
     source: 'https://knowsex.unknow.one/main/sexual-physiology/',
-    pages: ['性生理'],
+    pages: ['性生理', '性交疼痛'],
     note: '自制，使用的其它作品见图片说明',
   },
   {

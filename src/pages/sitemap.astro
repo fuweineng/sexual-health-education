@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import InfoNote from '../components/InfoNote.astro';
 import { mainLinks, siteLinks } from '../data/nav';
+import { articles } from '../data/articles';
 
 const mainEntries = mainLinks.map((link) => ({
   title: link.label,
@@ -11,8 +12,9 @@ const mainEntries = mainLinks.map((link) => ({
 
 const articleEntries = [
   { title: '文章索引', href: '/article/' },
-  { title: '紧急避孕', href: '/article/emergency-contraception/' },
-  { title: '数字安全：账号、隐私与线上骚扰', href: '/article/digital-safety/' },
+  ...articles
+    .filter((article) => article.group === 'article')
+    .map((article) => ({ title: article.title, href: `/article/${article.slug}/` })),
   { title: '二十个常见误区', href: '/article/common-myths/' },
 ];
 
