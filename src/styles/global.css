@@ -1060,6 +1060,14 @@ a {
   font-size: 13px;
 }
 
+.credit-note {
+  display: block;
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
 .topic-figure {
   display: block;
   width: 100%;

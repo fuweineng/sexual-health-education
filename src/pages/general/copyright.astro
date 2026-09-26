@@ -40,11 +40,11 @@ import { credits } from '../../data/credits';
           <p class="eyebrow">Images</p>
           <h2>图片来源与授权</h2>
         </div>
-        <p>照片与图表来自 Wikimedia Commons 与 Unsplash，只选用公有领域、CC0、CC BY / CC BY-SA 或 Unsplash 许可的素材。</p>
+        <p>照片与图表来自 Wikimedia Commons、Unsplash，以及原性教育站点 KnowSex 整理的科普素材，每一张都逐项列出作者、许可与原始来源。</p>
       </div>
 
       <InfoNote label="许可筛选原则">
-        只使用允许非商业使用、再分发并要求署名的许可；不使用带 NC / ND 限制的素材，也不复制其他站点的图片文件。每张图都会列出作者、许可条款和原始来源，读者可自行核对。
+        优先使用公有领域、CC0、CC BY / CC BY-SA 或 Unsplash 许可的素材；解剖与生理示意图等由 KnowSex 整理的图片，本站按其标注的作者与来源原样转用并保留署名，不用于商业用途。每张图的作者、许可和原始文件页都在下表中列出，读者可自行核对。
       </InfoNote>
 
       <div class="table-wrap">
@@ -71,6 +71,7 @@ import { credits } from '../../data/credits';
                   ) : (
                     credit.license
                   )}
+                  {credit.note && <span class="credit-note">{credit.note}</span>}
                 </td>
                 <td>
                   <a href={credit.source} target="_blank" rel="noopener noreferrer">原始来源</a>
@@ -82,7 +83,7 @@ import { credits } from '../../data/credits';
       </div>
 
       <p class="note">
-        图片按原样使用并按容器缩放显示，未改动画面上的文字与构图。CC BY-SA 材料随附其许可条款链接，复制或改编这些素材时需遵循相同许可要求。许可状态可能随原作者调整，发现问题请以原始文件页的最新说明为准。
+        图片按容器等比缩放显示，少量素材经过裁切或改字，已在表中标注。其中一部分由性教育站点 <a href="https://knowsex.unknow.one/" target="_blank" rel="noopener noreferrer">KnowSex</a> 整理转用，本站保留其标注的作者与来源链接，仅用于非商业科普。CC BY-SA 材料随附其许可条款链接，复制或改编这些素材时需遵循相同许可要求。许可状态可能随原作者调整，发现问题请以原始文件页的最新说明为准。
       </p>
     </div>
   </section>
